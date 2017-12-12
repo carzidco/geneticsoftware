@@ -16,7 +16,7 @@ class CreateBmProductOrdersTable extends Migration
         Schema::create('bm_product_orders', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('order_id');
-            $table->integer('product_id');
+            $table->integer('products_per_locations_id');
             $table->integer('quantity');
             $table->double('price', 8, 2);
             $table->timestamps();

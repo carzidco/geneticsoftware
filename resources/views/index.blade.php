@@ -180,7 +180,7 @@
       <header class="ms-header ms-header-white">
         <div class="container container-full">
           <div class="ms-title">
-            <a href="index.html">
+            <a href="{{ url('/') }}">
               <!-- <img src="images/demo/logo-header.png" alt=""> -->
               <!-- <span class="ms-logo animated zoomInDown animation-delay-5">G</span> -->
               <span class="ms-logo animated zoomInDown animation-delay-5">
@@ -1210,8 +1210,7 @@
           <div class="container">
             <div class="text-center mb-4">
               <h1 class="color-warning wow zoomInDown">Nuestros Servicios</h1>
-              <h3 class="wow zoomInDown">Knows the
-                <span class="text-normal">Material Style</span> and surprise yourself</h3>
+              <h3 class="wow zoomInDown">Conoce un poco de lo que hacemos</h3>
             </div>
             <div class="row">
               <div class="col-md-6">
@@ -1223,7 +1222,7 @@
                   Nos dedicamos a ofrecer refactorización de software como servicio principal,
                   sin dejar de lado la creación de software a la medida, aplicaciones móviles, consultoría,
                   y mercadeo digital.
-                  <a href="#" class="color-warning">quibusdam odio eius eligendi</a> tenetur! Ea, repudiandae eveniet ab minima laboriosam minima voluptate quaerat sequi harum.</p>
+                  {{-- <a href="#" class="color-warning">quibusdam odio eius eligendi</a> tenetur! Ea, repudiandae eveniet ab minima laboriosam minima voluptate quaerat sequi harum.</p> --}}
               </div>
               <div class="col-md-6">
                 <div class="panel-group ms-collapse color-dark" id="accordion2" role="tablist" aria-multiselectable="true">
@@ -1284,6 +1283,53 @@
                           de nuestros clientes, logramos materializar sus ideas en proyectos útiles e innovadores.
                           Nuestro software a la medida logra posicionar a los clientes en un entorno digital competitivo,
                           con mayor alcance y mejores resultados.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info wow fadeInUp animation-delay-5">
+                    <div class="panel-heading" role="tab" id="headingTwo4">
+                      <h4 class="panel-title">
+                        <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+                          <i class="fa fa-mobile"></i> Diseño de aplicaciones para móviles </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFour2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour2">
+                      <div class="panel-body">
+                        <p>
+                          Dentro de nuestros servicios especializados se encuentra el desarrollo de
+                          aplicaciones a la medida en las plataformas más populares del mercado como Android y iOS.
+                          Una de las mayores ventajas de un desarrollo de aplicaciones móviles a la medida es que
+                          estas pueden ayudar a su negocio a posicionarse de una mejor manera, otorgando mayor grado de
+                          visibilidad,  y mayor dominio del entorno digital.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-info wow fadeInUp animation-delay-5">
+                    <div class="panel-heading" role="tab" id="headingTwo4">
+                      <h4 class="panel-title">
+                        <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
+                          <i class="fa fa-bullseye"></i> Mercadeo Digital </a>
+                      </h4>
+                    </div>
+                    <div id="collapseFive2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive2">
+                      <div class="panel-body">
+                        <p>
+                          Ayudamos a las empresas sin importar su categorización o industria  a mostrar mejor contenido digital.
+                          Somos expertos en SEO (Search  Engine Optimization). Compartimos la idea de que los motores de búsqueda
+                          son la mejor manera de atraer tráfico. Ayudamos a nuestros clientes a mejorar su visibilidad del sitio web,
+                          convirtiéndolos en herramientas verdaderamente útiles.
+                          Nuestros servicios de mercadeo:
+                          <ol>
+                            <li>SEO</li>
+                            <li>Generación de Contenido</li>
+                            <li>Asesoría de Marca</li>
+                            <li>Planificación Estratégica</li>
+                            <li>Endo Marketing (Campañas y estrategias)</li>
+                            <li>Marketing Externo</li>
+                            <li>Campañas de Fidelización de Clientes</li>
+                          </ul>
                         </p>
                       </div>
                     </div>
@@ -1604,7 +1650,7 @@
       </div>
       <!--container -->
       <div class="wrap wrap-danger mt-6">
-        <h2 class="text-center no-m">What our customers say</h2>
+        <h2 class="text-center no-m">¿Qué dicen nuestros clientes?</h2>
         <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" data-ride="carousel" data-interval="7000">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -1623,7 +1669,7 @@
                         <blockquote class="blockquote-avatar withripple">
                           <img src="images/demo/avatar.png" alt="" class="avatar hidden-xs">
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                          <footer>Brian Krzanich, Intel CEO.</footer>
+                          <footer>Jose Alberto Nuñez, Hidromundo.</footer>
                         </blockquote>
                       </div>
                     </div>
@@ -1632,7 +1678,7 @@
                         <blockquote class="blockquote-avatar withripple">
                           <img src="images/demo/avatar.png" alt="" class="avatar hidden-xs">
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                          <footer>Brian Krzanich, Intel CEO.</footer>
+                          <footer>Fabián Quiros, Mayda.</footer>
                         </blockquote>
                       </div>
                     </div>
@@ -1641,7 +1687,7 @@
                         <blockquote class="blockquote-avatar withripple">
                           <img src="images/demo/avatar.png" alt="" class="avatar hidden-xs">
                           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante ultricies nisi vel augue quam semper libero.</p>
-                          <footer>Brian Krzanich, Intel CEO.</footer>
+                          <footer>Fernando González, Prevassa.</footer>
                         </blockquote>
                       </div>
                     </div>
