@@ -1221,7 +1221,7 @@
                 <p class="wow fadeInUp animation-delay-4">
                   Nos dedicamos a ofrecer refactorización de software como servicio principal,
                   sin dejar de lado la creación de software a la medida, aplicaciones móviles, consultoría,
-                  y mercadeo digital.
+                  y mercadeo digital. STEFA, SEGUI ESTO, VERSATILIDAD
                   {{-- <a href="#" class="color-warning">quibusdam odio eius eligendi</a> tenetur! Ea, repudiandae eveniet ab minima laboriosam minima voluptate quaerat sequi harum.</p> --}}
               </div>
               <div class="col-md-6">
@@ -1378,59 +1378,9 @@
           </div>
         </div>
       </section>
-      <!-- ms-hero ms-hero-black -->
-      <div class="container mt-4">
-        <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Bienvenidos</h2>
-        <!-- <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Lorem ipsum dolor sit amet,
-          <span class="color-primary">consectetur adipisicing</span> elit. Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p> -->
-        <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4">
-          <span class="color-primary">Genetic Software</span> Costa Rica, nace como una idea de emprendimiento, de pasión por la tecnología,
-          y por deseo infinito de hacer bien las cosas desde la primera vez, con  el objetivo de
-          agradar a nuestros clientes actuales y potenciales. </p>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">
-              <i class="zmdi zmdi-cloud-outline"></i>
-            </span>
-            <h4 class="color-info">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-info btn-raised">Action here</a>
-          </div>
-        </div>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
-              <i class="zmdi zmdi-desktop-mac"></i>
-            </span>
-            <h4 class="color-warning">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-warning btn-raised">Action here</a>
-          </div>
-        </div>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success">
-              <i class="zmdi zmdi-download"></i>
-            </span>
-            <h4 class="color-success">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-success btn-raised">Action here</a>
-          </div>
-        </div>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
-              <i class="zmdi zmdi-flower-alt"></i>
-            </span>
-            <h4 class="color-danger">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-danger btn-raised">Action here</a>
-          </div>
-        </div>
-      </div>
       <div class="container mt-6">
-        <h1 class="font-light">Technology that brings teams together</h1>
-        <p class="lead color-primary">— Intelligent apps that help you do your best work. </p>
+        <h1 class="font-light">Tecnologías que te permiten escalar</h1>
+        <p class="lead color-primary">— Combinaciones de plataformas ideales para que tu aplicación use lo último, hecho a la medida para tu necesidad </p>
         <div class="panel panel-light panel-flat">
           <!-- Nav tabs -->
           <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
@@ -1557,6 +1507,56 @@
           </div>
         </div>
         <!-- panel -->
+      </div>
+      <!-- ms-hero ms-hero-black -->
+      <div class="container mt-4">
+        <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Bienvenidos</h2>
+        <!-- <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Lorem ipsum dolor sit amet,
+          <span class="color-primary">consectetur adipisicing</span> elit. Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p> -->
+        <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4">
+          <span class="color-primary">Genetic Software</span> Costa Rica, nace como una idea de emprendimiento, de pasión por la tecnología,
+          y por deseo infinito de hacer bien las cosas desde la primera vez, con  el objetivo de
+          agradar a nuestros clientes actuales y potenciales. </p>
+        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+          <div class="text-center card-block">
+            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">
+              <i class="zmdi zmdi-cloud-outline"></i>
+            </span>
+            <h4 class="color-info">A feature title</h4>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+            <a href="javascript:void(0)" class="btn btn-info btn-raised">Action here</a>
+          </div>
+        </div>
+        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
+          <div class="text-center card-block">
+            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
+              <i class="zmdi zmdi-desktop-mac"></i>
+            </span>
+            <h4 class="color-warning">A feature title</h4>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+            <a href="javascript:void(0)" class="btn btn-warning btn-raised">Action here</a>
+          </div>
+        </div>
+        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
+          <div class="text-center card-block">
+            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success">
+              <i class="zmdi zmdi-download"></i>
+            </span>
+            <h4 class="color-success">A feature title</h4>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+            <a href="javascript:void(0)" class="btn btn-success btn-raised">Action here</a>
+          </div>
+        </div>
+        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
+          <div class="text-center card-block">
+            <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
+              <i class="zmdi zmdi-flower-alt"></i>
+            </span>
+            <h4 class="color-danger">A feature title</h4>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
+            <a href="javascript:void(0)" class="btn btn-danger btn-raised">Action here</a>
+          </div>
+        </div>
       </div>
       <!-- container -->
       <div class="container mt-6">

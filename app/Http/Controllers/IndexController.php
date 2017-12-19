@@ -12,4 +12,9 @@ class IndexController extends Controller
       // $response = $telegram->getMe();
       return view('index');
     }
+    
+    public function servicios_bm_menu(){
+      return view('servicios_bm_menu');
+    }
+    
 }
