@@ -20,8 +20,8 @@ Route::get('/serviciosbm', 'IndexController@servicios_bm_menu');
 
 // BI
 Route::get('/serviciosbm/intelligence', 'BusinessIntelligenceController@index');
-Route::match(['get', 'post'], '/serviciosbm/intelligence/products', function() {
-  return (new BusinessIntelligenceController)->getProducts();
+Route::match(['get', 'post'], '/serviciosbm/intelligence/products/{location_id?}', function($location_id = null) {
+  return (new BusinessIntelligenceController)->getProducts($location_id);
 });
 
 // CART
