@@ -16,9 +16,9 @@ $(document).ready(function() {
     var t=document.getElementById("myChart"), 
     o=(new Chart(t, {
         type:"bar", data: {
-            labels:["Red", "Blue", "Yellow", "Green", "Purple", "Orange"], 
+            labels:["Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre"], 
             datasets:[ {
-                label: "# of Votes", data: [65, 59, 80, 81, 56, 55, 40], backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(255, 206, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(255, 159, 64, 0.2)"], borderColor: ["rgba(255,99,132,1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"], borderWidth: 1
+                label: "% de compras", data: [65, 59, 80, 81, 56, 55, 40], backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(255, 206, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(255, 159, 64, 0.2)"], borderColor: ["rgba(255,99,132,1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"], borderWidth: 1
             }
             ]
         }
@@ -40,8 +40,8 @@ $(document).ready(function() {
     document.getElementById("myChart2")), 
     l=new Chart(o, {
         type:"bar", data: {
-            labels:["Red", "Blue", "Yellow", "Green", "Purple", "Orange"], datasets:[ {
-                label: "# of Votes", data: [12, 19, 3, 5, 2, 3], backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(255, 206, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(255, 159, 64, 0.2)"], borderColor: ["rgba(255,99,132,1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"], borderWidth: 1
+            labels:["Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre"], datasets:[ {
+                label: "# de clientes por mes", data: [12, 19, 3, 5, 2, 3], backgroundColor: ["rgba(255, 99, 132, 0.2)", "rgba(54, 162, 235, 0.2)", "rgba(255, 206, 86, 0.2)", "rgba(75, 192, 192, 0.2)", "rgba(153, 102, 255, 0.2)", "rgba(255, 159, 64, 0.2)"], borderColor: ["rgba(255,99,132,1)", "rgba(54, 162, 235, 1)", "rgba(255, 206, 86, 1)", "rgba(75, 192, 192, 1)", "rgba(153, 102, 255, 1)", "rgba(255, 159, 64, 1)"], borderWidth: 1
             }
             ]
         }
@@ -188,8 +188,8 @@ $(document).ready(function() {
     , 1200);
     var u=document.getElementById("myChart7"), c=new Chart(u, {
         type:"bar", data: {
-            labels:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], datasets:[ {
-                label: "Sales", data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], backgroundColor: "rgba(255,255,255,.3)", borderColor: "rgba(255,255,255,0.5)", borderWidth: 1
+            labels:["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"], datasets:[ {
+                label: "Venta por edad", data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], backgroundColor: "rgba(255,255,255,.3)", borderColor: "rgba(255,255,255,0.5)", borderWidth: 1
             }
             ]
         }
@@ -198,7 +198,7 @@ $(document).ready(function() {
                 yOffset: "80%", delay: 100
             }
             , title: {
-                display: !0, text: "Sales Report", fontColor: "#fff", fontSize: 20, fontFamily: "Roboto", fontStyle: "normal", padding: 20
+                display: !0, text: "Ventas por edades", fontColor: "#fff", fontSize: 20, fontFamily: "Roboto", fontStyle: "normal", padding: 20
             }
             , legend: {
                 display:!1, labels: {
@@ -236,14 +236,14 @@ $(document).ready(function() {
     var p=document.getElementById("myChart8");
     new Chart(p, {
         type:"bar", data: {
-            labels:["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], datasets:[ {
-                label: "Product 1", data: r(12, 1, 2e3), backgroundColor: "rgba(1, 188, 212, 1)", borderColor: "rgba(1, 188, 212, 1)", borderWidth: 1
+            labels:["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"], datasets:[ {
+                label: "Producto 1", data: r(12, 1, 2e3), backgroundColor: "rgba(1, 188, 212, 1)", borderColor: "rgba(1, 188, 212, 1)", borderWidth: 1
             }
             , {
-                label: "Product 2", data: r(12, 1, 2e3), backgroundColor: "rgba(255,152,0,1)", borderColor: "rgba(255,152,0,1)", borderWidth: 1
+                label: "Producto 2", data: r(12, 1, 2e3), backgroundColor: "rgba(255,152,0,1)", borderColor: "rgba(255,152,0,1)", borderWidth: 1
             }
             , {
-                label: "Product 3", data: r(12, 1, 2e3), backgroundColor: "rgba(156, 39, 176, 1)", borderColor: "rgba(156, 39, 176, 1)", borderWidth: 1
+                label: "Producto 3", data: r(12, 1, 2e3), backgroundColor: "rgba(156, 39, 176, 1)", borderColor: "rgba(156, 39, 176, 1)", borderWidth: 1
             }
             ]
         }
@@ -252,7 +252,7 @@ $(document).ready(function() {
                 yOffset: "80%", delay: 100
             }
             , title: {
-                display: !0, text: "Sales Report", fontSize: 20, fontFamily: "Roboto", fontStyle: "normal", padding: 20
+                display: !0, text: "Reporte de ventas", fontSize: 20, fontFamily: "Roboto", fontStyle: "normal", padding: 20
             }
             , legend: {
                 labels: {

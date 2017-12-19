@@ -37,7 +37,7 @@
           type: 'GET',
           url: '/serviciosbm/intelligence/products',
           success: function(response) {
-            var productArray = JSON.parse(response);
+            var productArray = response;
             var dataProduct = {};
             for (var i = 0; i < productArray.length; i++) {
               dataProduct[productArray[i].name] = productArray[i].name; //countryArray[i].flag or null

@@ -91,7 +91,7 @@
           type: 'GET',
           url: '/serviciosbm/intelligence/products',
           success: function(response) {
-            var productArray = JSON.parse(response);
+            var productArray = response;
             var dataProduct = {};
             for (var i = 0; i < productArray.length; i++) {
               dataProduct[productArray[i].name] = "http://www.guiatelefonicacostarica.com/pictures/profile/supermercado-en-san-vito-hogar-centro-san-vito-puntarenas-264.jpg"; //countryArray[i].flag or null
