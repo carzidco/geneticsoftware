@@ -404,7 +404,7 @@
 
         <div class="row">
             <div class="col-md-15 wow bounceIn" data-wow-duration="3s">
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="subscribe.php" role="form">
+                <form id="main-contact-form" class="contact-form" name="contact-form" action="" role="form">
                     <div class="col-md-6">
                         <div class="form-group">
                             <input type="text" class="form-control requiredfield" required="required" placeholder="Nombre" name='name' id='name'>
@@ -416,7 +416,7 @@
                             <textarea name="message" id="message" required="required" class="form-control requiredfield" rows="8" placeholder="Mensaje" id='message'></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" id='submitsend' class="btn btn-primary btn-lg" data-target=".bs-example-modal-sm" data-toggle="">Enviar</button>
+                            <button type="button" id='submitsend' class="btn btn-primary btn-lg" data-target=".bs-example-modal-sm" data-toggle="">Enviar</button>
                         </div>
                     </div>
                 </form>
