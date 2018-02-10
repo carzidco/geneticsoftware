@@ -1,0 +1,59 @@
+.blue-genetic {
+  color: #52adcf !important;
+}
+
+.red-genetic {
+  color: #bb232b !important;
+}
+
+.yellow-genetic {
+  color: #ffde02 !important;
+}
+
+.dark-yellow-genetic {
+  color: #a5ab41 !important;
+}
+
+.title-genetic {
+  margin-bottom: 42px;
+  color: #6b6b6b !important;
+}
+
+#services ol {
+  margin-left: -23px;
+}
+
+.bg-blue-genetic {
+  background-color: #52adcf !important;
+}
+
+.bg-red-genetic {
+  background-color: #bb232b !important;
+}
+
+.bg-yellow-genetic {
+  background-color: #ffde02 !important;
+}
+
+.bg-dark-yellow-genetic {
+  background-color: #a5ab41 !important;
+}
+
+/*Bottom boxes*/
+
+.card.red-genetic {
+    border-bottom: solid 3px #bb232b;
+    border-radius: 3px
+}
+.card.yellow-genetic {
+    border-bottom: solid 3px #ffde02;
+    border-radius: 3px
+}
+.card.dark-yellow-genetic {
+    border-bottom: solid 3px #a5ab41;
+    border-radius: 3px
+}
+.card.blue-genetic {
+    border-bottom: solid 3px #52adcf;
+    border-radius: 3px
+}

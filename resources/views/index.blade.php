@@ -13,6 +13,8 @@
     <!-- <link rel="stylesheet" href="../css/preload.min.css" /> -->
     <link href="{{ asset('css/plugins.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/genetic_style.css') }}" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
@@ -243,734 +245,34 @@
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="dropdown active">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">Inicio
-                  <i class="zmdi zmdi-chevron-down"></i>
+                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                  Inicio
                 </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <div class="ms-menu-double">
-                      <ul class="ms-menu-double-main-menu">
-                        <li class="active">
-                          <a href="#tab-1" data-hover="tab" data-toggle="tab">
-                            <i class="zmdi zmdi-home"></i> General Purpose</a>
-                        </li>
-                        <li>
-                          <a href="#tab-2" data-hover="tab">
-                            <i class="zmdi zmdi-desktop-windows"></i> Landing pages</a>
-                        </li>
-                        <li>
-                          <a href="#tab-9" data-hover="tab">
-                            <i class="zmdi zmdi-panorama-horizontal"></i> Slider Revolution</a>
-                        </li>
-                        <li>
-                          <a href="#tab-3" data-hover="tab" data-toggle="tab">
-                            <i class="zmdi zmdi-store"></i> Shop</a>
-                        </li>
-                        <li>
-                          <a href="#tab-8" data-hover="tab" data-toggle="tab">
-                            <i class="zmdi zmdi-account"></i> Professional Profile</a>
-                        </li>
-                        <li>
-                          <a href="#tab-4" data-hover="tab" data-toggle="tab">
-                            <i class="zmdi zmdi-edit"></i> Blog Template</a>
-                        </li>
-                        <li>
-                          <a href="#tab-5" data-hover="tab" data-toggle="tab">
-                            <i class="zmdi zmdi-flip"></i> Magazine Template</a>
-                        </li>
-                        <li>
-                          <a href="#tab-6" data-hover="tab" data-toggle="tab">
-                            <i class="zmdi zmdi-smartphone-iphone"></i> App Pages</a>
-                        </li>
-                        <li>
-                          <a href="#tab-7" data-hover="tab" data-toggle="tab">
-                            <i class="zmdi zmdi-search"></i> Classified Ads</a>
-                        </li>
-                      </ul>
-                      <div class="tab-content ms-menu-double-submenu-container">
-                        <div class="tab-pane active" id="tab-1">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="index.html">Default Home</a>
-                            </li>
-                            <li>
-                              <a href="home-generic-2.html">Home Black Slider</a>
-                            </li>
-                            <li>
-                              <a href="home-generic-3.html">Home Browsers Intro</a>
-                            </li>
-                            <li>
-                              <a href="home-generic-4.html">Home Mobile Intro</a>
-                            </li>
-                            <li>
-                              <a href="home-generic-5.html">Home Material Icons</a>
-                            </li>
-                            <li>
-                              <a href="home-generic-6.html">Home Typed Hero</a>
-                            </li>
-                            <li>
-                              <a href="home-generic-7.html">Home Typed Hero 2</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-2">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-landing.html">Home Landing Intro</a>
-                            </li>
-                            <li>
-                              <a href="home-landing2.html">Home Landing Intro 2</a>
-                            </li>
-                            <li>
-                              <a href="home-landing4.html">Home Landing Intro 3</a>
-                            </li>
-                            <li>
-                              <a href="home-landing3.html">Home Landing Video</a>
-                            </li>
-                            <li>
-                              <a href="home-cv3.html">Home Profile Landing 1</a>
-                            </li>
-                            <li>
-                              <a href="home-cv4.html">Home Profile Landing 2</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Landing Video 2 (Next Update)</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-9">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-revolution.html">Home Revolution Devices
-                                <span class="label label-success pull-right">1.3</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="home-revolution2.html">Home Revolution App
-                                <span class="label label-success pull-right">1.3</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="home-revolution3.html">Home Revolution Video
-                                <span class="label label-success pull-right">1.3</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="home-revolution4.html">Home Revolution Idea
-                                <span class="label label-success pull-right">1.3</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-3">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-shop.html">Home Shop 1</a>
-                            </li>
-                            <li>
-                              <a href="home-shop2.html">Home Shop 2</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Home Shop 3 (Next Update)</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Home Shop 4 (Next Update)</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-8">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-cv.html">Home Profile 1</a>
-                            </li>
-                            <li>
-                              <a href="home-cv2.html">Home Profile 2</a>
-                            </li>
-                            <li>
-                              <a href="home-cv3.html">Home Profile Landing 1</a>
-                            </li>
-                            <li>
-                              <a href="home-cv4.html">Home Profile Landing 2</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-4">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-blog.html">Home Blog 1</a>
-                            </li>
-                            <li>
-                              <a href="home-blog2.html">Home Blog 2</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Home Blog 3 (Next Update)</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Home Blog 4 (Next Update)</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-5">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-magazine.html">Home Magazine 1</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Magazine 2 (Next Update)</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Magazine 3 (Next Update)</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Magazine 4 (Next Update)</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-6">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-app.html">Home App 1</a>
-                            </li>
-                            <li>
-                              <a href="home-app2.html">Home App 2</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Home App 3 (Next Update)</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Home App 4 (Next Update)</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="tab-pane" id="tab-7">
-                          <ul class="ms-menu-double-submenu">
-                            <li>
-                              <a href="home-class.html">Home Classifieds 1</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Classifieds 2 (Next Update)</a>
-                            </li>
-                            <li class="disable">
-                              <a href="javascript:void(0)">Classifieds 3 (Next Update)</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
               </li>
               <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-5" data-toggle="dropdown" data-hover="dropdown" data-name="page">Pages
-                  <i class="zmdi zmdi-chevron-down"></i>
+                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                  Nosotros
                 </a>
-                <ul class="dropdown-menu dropdown-menu-left animated-2x animated fadeIn">
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">About us &amp; Team</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-about.html">About us Option 1</a>
-                      </li>
-                      <li>
-                        <a href="page-about2.html">About us Option 2</a>
-                      </li>
-                      <li>
-                        <a href="page-about3.html">About us Option 3</a>
-                      </li>
-                      <li>
-                        <a href="page-about4.html">About us Option 4</a>
-                      </li>
-                      <li class="divider"></li>
-                      <li>
-                        <a href="page-team.html">Our Team Option 1</a>
-                      </li>
-                      <li>
-                        <a href="page-team2.html">Our Team Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Form</a>
-                    <ul class="dropdown-menu">
-                      <li>
-                        <a href="page-contact.html">Contact Option 1</a>
-                      </li>
-                      <li>
-                        <a href="page-contact2.html">Contact Option 2</a>
-                      </li>
-                      <li class="divider"></li>
-                      <li>
-                        <a href="page-login_register.html">Login &amp; Register</a>
-                      </li>
-                      <li>
-                        <a href="page-login.html">Login Full</a>
-                      </li>
-                      <li>
-                        <a href="page-login2.html">Login Integrated</a>
-                      </li>
-                      <li class="divider"></li>
-                      <li>
-                        <a href="page-login_register2.html">Register Option 1</a>
-                      </li>
-                      <li>
-                        <a href="page-register2.html">Register Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Profiles</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-profile.html">User Profile Option 1</a>
-                      </li>
-                      <li>
-                        <a href="page-profile2.html">User Profile Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Error</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-404.html">Error 404 Full Page</a>
-                      </li>
-                      <li>
-                        <a href="page-404_2.html">Error 404 Integrated</a>
-                      </li>
-                      <li>
-                        <a href="page-500.html">Error 500 Full Page</a>
-                      </li>
-                      <li>
-                        <a href="page-500_2.html">Error 500 Integrated</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Bussiness &amp; Products</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-testimonial.html">Testimonials</a>
-                      </li>
-                      <li>
-                        <a href="page-clients.html">Our Clients</a>
-                      </li>
-                      <li>
-                        <a href="page-product.html">Products</a>
-                      </li>
-                      <li>
-                        <a href="page-services.html">Services</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Pricing</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-pricing.html">Pricing Box</a>
-                      </li>
-                      <li>
-                        <a href="page-pricing2.html">Pricing Box 2</a>
-                      </li>
-                      <li>
-                        <a href="page-princing_table.html">Pricing Mega Table</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">FAQ &amp; Support</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-support.html">Support Center</a>
-                      </li>
-                      <li>
-                        <a href="page-faq.html">FAQ Option 1</a>
-                      </li>
-                      <li>
-                        <a href="page-faq2.html">FAQ Option 2</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Coming Soon</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-coming.html">Coming Soon Option 1</a>
-                      </li>
-                      <li>
-                        <a href="page-coming2.html">Coming Soon Option 2</a>
-                      </li>
-                      <li>
-                        <a href="page-coming3.html">Coming Soon Option 3</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Timeline</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-timeline_left.html">Timeline Left</a>
-                      </li>
-                      <li>
-                        <a href="page-timeline_left2.html">Timeline Left 2</a>
-                      </li>
-                      <li>
-                        <a href="page-timeline.html">Timeline Center</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu">
-                    <a href="javascript:void(0)" class="has_children">Email Templates</a>
-                    <ul class="dropdown-menu dropdown-menu-left">
-                      <li>
-                        <a href="page-email.html" class="with-label">Email Template 1
-                          <span class="label label-success text-right">1.2</span>
-                        </a>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="page-email2.html" class="with-label">Email Template 2
-                          <span class="label label-success text-right">1.2</span>
-                        </a>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="page-all.html" class="dropdown-link">All Pages</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="dropdown yamm-fw">
-                <a href="#" class="dropdown-toggle animated fadeIn animation-delay-6" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="component">UI Elements
-                  <i class="zmdi zmdi-chevron-down"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-megamenu animated fadeIn animated-2x">
-                  <li>
-                    <div class="row">
-                      <div class="col-sm-3 megamenu-col">
-                        <div class="megamenu-block animated fadeInLeft animated-2x">
-                          <h3 class="megamenu-block-title">
-                            <i class="fa fa-bold"></i> Bootstrap CSS</h3>
-                          <ul class="megamenu-block-list">
-                            <li>
-                              <a class="withripple" href="component-typography.html">
-                                <i class="fa fa-font"></i> Typography</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-headers.html">
-                                <i class="fa fa-header"></i> Headers</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-dividers.html">
-                                <i class="fa fa-arrows-h"></i> Dividers</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-blockquotes.html">
-                                <i class="fa fa-quote-right"></i> Blockquotes</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-forms.html">
-                                <i class="fa fa-check-square-o"></i> Forms
-                                <span class="label label-info pull-right">
-                                  <i class="zmdi zmdi-long-arrow-up no-mr"></i> 1.5</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-tables.html">
-                                <i class="fa fa-table"></i> Tables</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="megamenu-block animated fadeInLeft animated-2x">
-                          <h3 class="megamenu-block-title">
-                            <i class="fa fa-hand-o-up"></i> Buttons</h3>
-                          <ul class="megamenu-block-list">
-                            <li>
-                              <a class="withripple" href="component-basic-buttons.html">
-                                <i class="fa fa-arrow-circle-right"></i> Basic Buttons</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-buttons-components.html">
-                                <i class="fa fa-arrow-circle-right"></i> Buttons Components</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-social-buttons.html">
-                                <i class="fa fa-arrow-circle-right"></i> Social Buttons
-                                <span class="label label-info pull-right">
-                                  <i class="zmdi zmdi-long-arrow-up no-mr"></i> 1.3</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 megamenu-col">
-                        <div class="megamenu-block animated fadeInLeft animated-2x">
-                          <h3 class="megamenu-block-title">
-                            <i class="fa fa-list-alt"></i> Basic Components</h3>
-                          <ul class="megamenu-block-list">
-                            <li>
-                              <a class="withripple" href="component-panels.html">
-                                <i class="zmdi zmdi-view-agenda"></i> Panels</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-alerts.html">
-                                <i class="zmdi zmdi-info"></i> Alerts &amp; Wells</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-labels.html">
-                                <i class="zmdi zmdi-tag"></i> Labels &amp; Badges</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-lists.html">
-                                <i class="zmdi zmdi-view-list"></i> Lists</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-thumbnails.html">
-                                <i class="zmdi zmdi-image-o"></i> Thumbnails</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-carousels.html">
-                                <i class="zmdi zmdi-view-carousel"></i> Carousels</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-modals.html">
-                                <i class="zmdi zmdi-window-maximize"></i> Modals</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-tooltip.html">
-                                <i class="zmdi zmdi-pin-help"></i> Tooltip &amp; Popover</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-progress-bars.html">
-                                <i class="zmdi zmdi-view-headline"></i> Progress Bars</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-pagination.html">
-                                <i class="zmdi zmdi-n-2-square"></i> Pagination</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-dropdowns.html">
-                                <i class="fa fa-info"></i> Dropdowns</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 megamenu-col">
-                        <div class="megamenu-block animated fadeInRight animated-2x">
-                          <h3 class="megamenu-block-title">
-                            <i class="zmdi zmdi-folder-star-alt"></i> Extra Components</h3>
-                          <ul class="megamenu-block-list">
-                            <li>
-                              <a class="withripple" href="component-cards.html">
-                                <i class="zmdi zmdi-card-membership"></i> Cards</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-composite-cards.html">
-                                <i class="zmdi zmdi-card-giftcard"></i> Composite Cards</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-counters.html">
-                                <i class="zmdi zmdi-n-6-square"></i> Counters</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-audio-video.html">
-                                <i class="zmdi zmdi-play-circle"></i> Audio &amp; Video</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-masonry.html">
-                                <i class="zmdi zmdi-view-dashboard"></i> Masonry Layer</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-snackbar.html">
-                                <i class="zmdi zmdi-notifications-active"></i> SnackBar
-                                <span class="label label-success pull-right">1.2</span>
-                              </a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-lightbox.html">
-                                <i class="zmdi zmdi-collection-image-o"></i> Lightbox
-                                <span class="label label-success pull-right">1.5</span>
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="megamenu-block animated fadeInRight animated-2x">
-                          <h3 class="megamenu-block-title">
-                            <i class="zmdi zmdi-tab"></i> Collapses &amp; Tabs</h3>
-                          <ul class="megamenu-block-list">
-                            <li>
-                              <a class="withripple" href="component-collapses.html">
-                                <i class="zmdi zmdi-view-day"></i> Collapses</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-horizontal-tabs.html">
-                                <i class="zmdi zmdi-tab"></i> Horitzontal Tabs</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-vertical-tabs.html">
-                                <i class="zmdi zmdi-menu"></i> Vertical Tabs</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 megamenu-col">
-                        <div class="megamenu-block animated fadeInRight animated-2x">
-                          <h3 class="megamenu-block-title">
-                            <i class="fa fa-briefcase"></i> Icons</h3>
-                          <ul class="megamenu-block-list">
-                            <li>
-                              <a class="withripple" href="component-icons-basic.html">
-                                <i class="fa fa-arrow-circle-right"></i> Basic Icons</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-icons-fontawesome.html">
-                                <i class="fa fa-arrow-circle-right"></i> Font Awesome</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-icons-iconic.html">
-                                <i class="fa fa-arrow-circle-right"></i> Material Design Iconic</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-icons-glyphicons.html">
-                                <i class="fa fa-arrow-circle-right"></i> Glyphicons</a>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="megamenu-block animated fadeInRight animated-2x">
-                          <h3 class="megamenu-block-title">
-                            <i class="fa fa-area-chart"></i> Charts</h3>
-                          <ul class="megamenu-block-list">
-                            <li>
-                              <a class="withripple" href="component-charts-circle.html">
-                                <i class="zmdi zmdi-chart-donut"></i> Circle Charts</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-charts-bar.html">
-                                <i class="fa fa-bar-chart"></i> Bars Charts</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-charts-line.html">
-                                <i class="fa fa-line-chart"></i> Line Charts</a>
-                            </li>
-                            <li>
-                              <a class="withripple" href="component-charts-more.html">
-                                <i class="fa fa-pie-chart"></i> More Charts</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle animated fadeIn animation-delay-7" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Blog
-                  <i class="zmdi zmdi-chevron-down"></i>
+                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                  Servicios
                 </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="blog-sidebar.html">
-                      <i class="zmdi zmdi-view-compact"></i> Blog Sidebar 1</a>
-                  </li>
-                  <li>
-                    <a href="blog-sidebar2.html">
-                      <i class="zmdi zmdi-view-compact"></i> Blog Sidebar 2</a>
-                  </li>
-                  <li>
-                    <a href="blog-masonry.html">
-                      <i class="zmdi zmdi-view-dashboard"></i> Blog Masonry 1</a>
-                  </li>
-                  <li>
-                    <a href="blog-masonry2.html">
-                      <i class="zmdi zmdi-view-dashboard"></i> Blog Masonry 2</a>
-                  </li>
-                  <li>
-                    <a href="blog-full.html">
-                      <i class="zmdi zmdi zmdi-view-stream"></i> Blog Full Page 1</a>
-                  </li>
-                  <li>
-                    <a href="blog-full2.html">
-                      <i class="zmdi zmdi zmdi-view-stream"></i> Blog Full Page 2</a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="blog-post.html">
-                      <i class="zmdi zmdi-file-text"></i> Blog Post 1</a>
-                  </li>
-                  <li>
-                    <a href="blog-post2.html">
-                      <i class="zmdi zmdi-file-text"></i> Blog Post 2</a>
-                  </li>
-                </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle animated fadeIn animation-delay-8" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="portfolio">Portfolio
-                  <i class="zmdi zmdi-chevron-down"></i>
+                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                  Tecnologías
                 </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="portfolio-filters_sidebar.html">
-                      <i class="zmdi zmdi-view-compact"></i> Portfolio Sidebar Filters</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-filters_topbar.html">
-                      <i class="zmdi zmdi-view-agenda"></i> Portfolio Topbar Filters</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-filters_sidebar_fluid.html">
-                      <i class="zmdi zmdi-view-compact"></i> Portfolio Sidebar Fluid</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-filters_topbar_fluid.html">
-                      <i class="zmdi zmdi-view-agenda"></i> Portfolio Topbar Fluid</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-cards.html">
-                      <i class="zmdi zmdi-card-membership"></i> Porfolio Cards</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-masonry.html">
-                      <i class="zmdi zmdi-view-dashboard"></i> Porfolio Masonry</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-gallery.html" class="with-label">
-                      <i class="zmdi zmdi-apps"></i> Picture Gallery
-                      <span class="label label-success text-right">1.5</span>
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="portfolio-item.html">
-                      <i class="zmdi zmdi-collection-item-1"></i> Portfolio Item 1</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-item2.html">
-                      <i class="zmdi zmdi-collection-item-2"></i> Portfolio Item 2</a>
-                  </li>
-                </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle animated fadeIn animation-delay-9" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false" data-name="ecommerce">E-Commerce
-                  <i class="zmdi zmdi-chevron-down"></i>
+                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                  Nuestros valores
                 </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a href="ecommerce-filters.html">E-Commerce Sidebar</a>
-                  </li>
-                  <li>
-                    <a href="ecommerce-filters-full.html">E-Commerce Sidebar Full</a>
-                  </li>
-                  <li>
-                    <a href="ecommerce-filters-full2.html">E-Commerce Topbar Full</a>
-                  </li>
-                  <li class="divider"></li>
-                  <li>
-                    <a href="ecommerce-item.html">E-Commerce Item</a>
-                  </li>
-                  <li>
-                    <a href="ecommerce-cart.html">E-Commerce Cart</a>
-                  </li>
-                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                  Contacto
+                </a>
               </li>
               <!-- <li class="btn-navbar-menu"><a href="javascript:void(0)" class="sb-toggle-left"><i class="zmdi zmdi-menu"></i></a></li> -->
             </ul>
@@ -1174,60 +476,130 @@
         <!-- container -->
       </div>
       <!-- container -->
-      <div class="wrap wrap-mountain mt-6">
-        <div class="container">
-          <h1 class="text-center text-light mb-6 wow fadeInDown animation-delay-5">Bienvenidos</h1>
-          <div class="row">
-            <div class="col-md-6 col-md-push-6 mb-4  center-block">
-              <img src="images/demo/molecules.png" alt="" class="img-responsive center-block wow zoomIn animation-delay-12 "> </div>
-            <div class="col-md-6 col-md-pull-6 pr-6">
-              <p class="wow fadeInLeft animation-delay-6">
-                Genetic Software Costa Rica, nace como una idea de emprendimiento, de pasión por la tecnología,
-                y por deseo infinito de hacer bien las cosas desde la primera vez, con  el objetivo de
-                agradar a nuestros clientes actuales y potenciales.
-              </p>
-              <p class="wow fadeInLeft animation-delay-7">
-                Cada proyecto que hemos realizado lleva una gran dosis de  esfuerzo, entusiasmo, creatividad y
-                los mejores estándares de calidad e innovación que diferencian nuestros desarrollos.
-              </p>
-              <p class="wow fadeInLeft animation-delay-8">
-                Nuestro equipo de ingenieros comparte con nosotros la ideología de nuestra marca, una molécula
-                de ADN que nos caracteriza como individuos, como creación única. Nuestros proyectos y metodologías
-                también lo son.
-              </p>
-              {{-- <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-warning btn-raised mr-1 wow flipInX animation-delay-14">
-                  <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                <a href="javascript:void(0)" class="btn btn-info btn-raised wow flipInX animation-delay-16">
-                  <i class="zmdi zmdi-case"></i> Button</a>
+      <section id="aboutus" class="mt-6">
+        <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
+          <div class="container">
+            <h1 class="text-center color-warning wow zoomInDown blue-genetic title-genetic"><strong>¿Quiénes somos nosotros?</strong></h1>
+            <div class="row" style="margin-bottom: 50px">
+              {{-- <div class="col-md-6 col-md-push-6 mb-4  center-block">
+                <img src="images/demo/molecules.png" alt="" class="img-responsive center-block wow zoomIn animation-delay-12 ">
               </div> --}}
+              <div class="col-md-6 col-md-push-6 pr-6">
+                <p class="wow fadeInRight animation-delay-6">
+                  Nuestro equipo de ingenieros comparte con nosotros la ideología de nuestra marca, una molécula
+                  de <strong><span class="blue-genetic">A</span><span class="dark-yellow-genetic">D</span><span class="red-genetic">N</span></strong> que nos caracteriza como individuos, como creación única. Nuestros proyectos y metodologías
+                  también lo son.
+                </p>
+                <p class="wow fadeInRight animation-delay-7">
+                  Lo invitamos a que navegue un poco más en nuestra web, para que conozca a fondo lo  que hacemos, lo que nos hace diferentes, y cómo nuestro concepto de negocio puede ayudar a su organización.
+                </p>
+              </div>
+              <div class="col-md-6 col-md-pull-6 pr-6">
+                <p class="wow fadeInLeft animation-delay-6">
+                  <strong>Genetic Software Costa Rica</strong>, nace en el 2012 como una idea de emprendimiento, de pasión por la tecnología,
+                  y por deseo infinito de hacer bien las cosas desde la primera vez, con  el objetivo de
+                  agradar a nuestros clientes actuales y potenciales.
+                </p>
+                <p class="wow fadeInLeft animation-delay-7">
+                  Cada proyecto que hemos realizado lleva una gran dosis de  esfuerzo, entusiasmo, creatividad y
+                  los mejores estándares de calidad e innovación que diferencian nuestros desarrollos.
+                </p>
+                {{-- <div class="text-center">
+                  <a href="javascript:void(0)" class="btn btn-warning btn-raised mr-1 wow flipInX animation-delay-14">
+                    <i class="zmdi zmdi-chart-donut"></i> Action here </a>
+                  <a href="javascript:void(0)" class="btn btn-info btn-raised wow flipInX animation-delay-16">
+                    <i class="zmdi zmdi-case"></i> Button</a>
+                </div> --}}
+              </div>
+            </div>
+            <h1 class="text-center color-warning wow zoomInDown blue-genetic title-genetic">A lo largo de nuestra trayectoria</h1>
+            <div class="row">
+              <div class="mt-6 color-dark">
+                <div class="row">
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card blue-genetic card-block text-center wow zoomInUp animation-delay-2">
+                      <h2 class="counter">300000</h2>
+                      <i class="blue-genetic fa fa-4x fa-code"></i>
+                      <p class="mt-2 no-mb lead small-caps">líneas de código</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card dark-yellow-genetic card-block text-center wow zoomInUp animation-delay-5">
+                      <h2 class="counter">100</h2>
+                      <i class="dark-yellow-genetic fa fa-4x fa-bullseye"></i>
+                      <p class="mt-2 no-mb lead small-caps">planes de mercadeo</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card blue-genetic card-block text-center wow zoomInUp animation-delay-4">
+                      <h2 class="counter">1000</h2>
+                      <i class="blue-genetic fa fa-4x fa-bug"></i>
+                      <p class="mt-2 no-mb lead small-caps">Bugs resueltos</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="card dark-yellow-genetic card-block text-center wow zoomInUp animation-delay-3">
+                      <h2 class="counter">500</h2>
+                      <i class="dark-yellow-genetic fa fa-4x fa-coffee"></i>
+                      <p class="mt-2 no-mb lead small-caps">tazas de café</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center color-white mw-800 center-block mt-4">
+                  <p class="lead lead-lg wow fadeInUp animation-delay-2">Discover our projects and the rigorous process of creation. Our principles are creativity, design, experience and knowledge. We are backed by 20 years of research.</p>
+                  <a href="javascript:void(0)" class="btn btn-raised btn-xlg btn-info wow flipInX animation-delay-5">
+                     Cotice su proyecto
+                   </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section id="services" class="mt-6">
-        <div class="wrap ms-hero-img-city2 ms-hero-bg-dark-light color-white ms-bg-fixed">
+        <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
           <div class="container">
             <div class="text-center mb-4">
-              <h1 class="color-warning wow zoomInDown">Nuestros Servicios</h1>
-              <h3 class="wow zoomInDown">Conoce un poco de lo que hacemos</h3>
+              <h1 class="color-warning wow zoomInDown blue-genetic title-genetic"><strong>Nuestros Servicios</strong></h1>
             </div>
             <div class="row">
               <div class="col-md-6">
-                <h3 class="wow fadeInUp animation-delay-2">Descripción</h3>
-                <p class="wow fadeInUp animation-delay-3">
-
+                <p class="wow fadeInUp animation-delay-4 col-md-push-6">
+                  En <strong>Genetic Software Costa Rica</strong>, nuestra prioridad es  potenciar la vida comercial
+                  las organizaciones.
                 </p>
-                <p class="wow fadeInUp animation-delay-4">
-                  Nos dedicamos a ofrecer refactorización de software como servicio principal,
-                  sin dejar de lado la creación de software a la medida, aplicaciones móviles, consultoría,
-                  y mercadeo digital. STEFA, SEGUI ESTO, VERSATILIDAD
+                <p class="wow fadeInUp animation-delay-5 col-md-push-6">
+                  Vimos la oportunidad de fusionar nuestro conocimiento en mercadotecnia y
+                  administración estratégica con las últimas tecnologías en desarrollo de software.
+                  Y es a través de esto que podemos ayudarle a que su marca sea aún más visible y
+                  que logre más rápido sus objetivos organizacionales.
+                </p>
                   {{-- <a href="#" class="color-warning">quibusdam odio eius eligendi</a> tenetur! Ea, repudiandae eveniet ab minima laboriosam minima voluptate quaerat sequi harum.</p> --}}
+                <ol class="wow fadeInUp animation-delay-6 col-md-push-6">
+                  <li><strong>Software</strong>
+                    <ul>
+                     <li>Refactorización de software</li>
+                      <li>Software a la medida</li>
+                      <li>Aplicaciones móviles,</li>
+                      <li>Consultoría</li>
+                    </ul>
+                  </li>
+                  <li><strong>Soluciones administrativas y mercadológicas</strong>
+                    <ul>
+                      <li>Mercadeo Digital</li>
+                      <li>SEO (Optimización en motores de búsqueda)</li>
+                      <li>Creación de Contenido Estratégico</li>
+                      <li>Asesorías de Planificacion Estratégica y Soluciones Administrativass</li>
+                      <li>Generación de Leads</li>
+                      <li>Servicios de Fotografía y Diseño Corporativo</li>
+                    </ul>
+                  </li>
+                 </ol>
               </div>
               <div class="col-md-6">
                 <div class="panel-group ms-collapse color-dark" id="accordion2" role="tablist" aria-multiselectable="true">
-                  <div class="panel panel-info wow fadeInUp animation-delay-2">
-                    <div class="panel-heading" role="tab" id="headingOne2">
+                  <div class="panel panel-info wow fadeInUp animation-delay-1">
+                    <div class="panel-heading bg-blue-genetic" role="tab" id="headingOne2">
                       <h4 class="panel-title">
                         <a class="withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
                           <i class="fa fa-lightbulb-o"></i> ¿Qué se entiende por refactorización? </a>
@@ -1245,7 +617,7 @@
                     </div>
                   </div>
                   <div class="panel panel-info wow fadeInUp animation-delay-5">
-                    <div class="panel-heading" role="tab" id="headingTwo2">
+                    <div class="panel-heading bg-blue-genetic" role="tab" id="headingTwo2">
                       <h4 class="panel-title">
                         <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                           <i class="fa fa-desktop"></i> ¿Cuándo es necesaria una refactorización de software? </a>
@@ -1267,7 +639,7 @@
                     </div>
                   </div>
                   <div class="panel panel-info wow fadeInUp animation-delay-7">
-                    <div class="panel-heading" role="tab" id="headingThree3">
+                    <div class="panel-heading bg-blue-genetic" role="tab" id="headingThree3">
                       <h4 class="panel-title">
                         <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
                           <i class="fa fa-user"></i> ¿Qué es software a la medida?  </a>
@@ -1287,8 +659,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="panel panel-info wow fadeInUp animation-delay-5">
-                    <div class="panel-heading" role="tab" id="headingTwo4">
+                  <div class="panel panel-info wow fadeInUp animation-delay-9">
+                    <div class="panel-heading bg-blue-genetic" role="tab" id="headingTwo4">
                       <h4 class="panel-title">
                         <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
                           <i class="fa fa-mobile"></i> Diseño de aplicaciones para móviles </a>
@@ -1306,8 +678,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="panel panel-info wow fadeInUp animation-delay-5">
-                    <div class="panel-heading" role="tab" id="headingTwo4">
+                  <div class="panel panel-info wow fadeInUp animation-delay-11">
+                    <div class="panel-heading bg-blue-genetic" role="tab" id="headingTwo4">
                       <h4 class="panel-title">
                         <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
                           <i class="fa fa-bullseye"></i> Mercadeo Digital </a>
@@ -1337,319 +709,211 @@
                 </div>
               </div>
             </div>
-            <div class="mt-6 color-dark">
-              <h2 class="color-white text-center mb-4 wow fadeInUp animation-delay-2">Some numerical data</h2>
-              <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="card card-royal card-block text-center wow zoomInUp animation-delay-2">
-                    <h2 class="counter">450</h2>
-                    <i class="color-royal fa fa-4x fa-coffee"></i>
-                    <p class="mt-2 no-mb lead small-caps">cups of coffee</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="technologies" class="mt-6">
+        <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
+          <div class="container">
+            <div class="row">
+              <h1 class="font-light">Tecnologías que te permiten escalar</h1>
+              <p class="lead blue-genetic">— Le ofrecemos la combinación de herramientas óptimas para brindarle una solución a la medida</p>
+              <div class="panel panel-light panel-flat">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
+                  <li class="wow fadeInDown animation-delay-6 active" role="presentation">
+                    <a href="#web" aria-controls="web" role="tab" data-toggle="tab" class="withoutripple">
+                      <i class="zmdi zmdi-language-html5"></i>
+                      <span class="hidden-xs">Web</span>
+                    </a>
+                  </li>
+                  <li class="wow fadeInDown animation-delay-4" role="presentation">
+                    <a href="#mobile" aria-controls="mobile" role="tab" data-toggle="tab" class="withoutripple">
+                      <i class="zmdi zmdi-android"></i>
+                      <i class="zmdi zmdi-apple"></i>
+                      <span class="hidden-xs">Móviles</span>
+                    </a>
+                  </li>
+                  <li class="wow fadeInDown animation-delay-4" role="presentation">
+                    <a href="#refactoring" aria-controls="refactoring" role="tab" data-toggle="tab" class="withoutripple">
+                      <i class="fa fa-cogs"></i>
+                      <span class="hidden-xs">Refactorización</span>
+                    </a>
+                  </li>
+                  <li class="wow fadeInDown animation-delay-6" role="presentation">
+                    <a href="#chatbots" aria-controls="chatbots" role="tab" data-toggle="tab" class="withoutripple">
+                      <i class="fa fa-comments"></i>
+                      <span class="hidden-xs">Chatbots</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="panel-body">
+                  <!-- Tab panes -->
+                  <div class="tab-content mt-4">
+                    <div role="tabpanel" class="tab-pane active in fade" id="web">
+                      <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+                          <img src="images/main/web.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <div class="col-md-6 col-md-pull-6">
+                          <h3 class="text-normal animated fadeInUp animation-delay-4">¿Cuenta su negocio con una óptima aplicación web?</h3>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Las tendencias digitales y su constante evolución nos obligan en la actualidad a tener no solamente un sitio web común que solo muestra información y fotos,
+                            si no aplicaciones que sean capaces de ofrecer interacción con el usuario y sacar provecho de la herramienta.
+                          </p>
+                          <p class="lead lead-md animated fadeInUp animation-delay-7">
+                            Modelamos sus aplicaciones con frameworks ligeros que le permitan una experiencia veloz y provechosa
+                            al usuario desde cualquier dispositivo.
+                          </p>
+                          <div class="">
+                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
+                              <i class="zmdi zmdi-info"></i> More info</a>
+                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
+                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="mobile">
+                      <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+                          <img src="images/main/mobile.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <div class="col-md-6 col-md-pull-6">
+                          <h3 class="text-normal animated fadeInUp animation-delay-4">¿Llega su negocio hasta el dispositivo móvil de sus clientes?</h3>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Mejore la presencia de su marca y expanda su dominio digital.
+                          </p>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Solo piense que desea, nosotros nos encargamos de que sus aplicaciones cobren vida.
+                          </p>
+                          <div class="">
+                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
+                              <i class="zmdi zmdi-info"></i> More info</a>
+                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
+                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="refactoring">
+                      <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+                          <img src="images/main/refactoring.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <div class="col-md-6 col-md-pull-6">
+                          <h3 class="text-normal animated fadeInUp animation-delay-4">¿Considera usted que uno de sus sistemas es inservible?</h3>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Las aplicaciones "obsoletas", los sistemas con errores frecuentes y lentos, o cualquiera que sea la
+                            situación de su sistema o aplicación no significa el fin de estos, o que su inversión inicial
+                            se ha transformado en un gasto infructuoso.
+                          </p>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Nosotros le ayudamos para que su sistema o aplicación obtenga la productividad deseada
+                            partiendo del existente y creando una herramienta escalable.
+                          </p>
+                          <div class="">
+                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
+                              <i class="zmdi zmdi-info"></i> More info</a>
+                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
+                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="chatbots">
+                      <div class="row">
+                        <div class="col-md-6 col-md-push-6">
+                          <img src="images/main/chatbot.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <div class="col-md-6 col-md-pull-6">
+                          <h3 class="text-normal animated fadeInUp animation-delay-4">¿Inteligencia artificial y FAQ's?</h3>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Satisfaga la demanda de respuesta inmediata de su público.
+                          </p>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Agilice los procesos de respuesta ante preguntas frecuentes por medio de robots inteligentes
+                            que responden rapidamente y con informacion de su negocio.
+                          </p>
+                          <p class="lead lead-md animated fadeInUp animation-delay-6">
+                            Incopore la inteligencia artificial en la interaccion diaria con sus clientes.
+                          </p>
+                          <div class="">
+                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
+                              <i class="zmdi zmdi-info"></i> More info</a>
+                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
+                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="card card-success card-block text-center wow zoomInUp animation-delay-5">
-                    <h2 class="counter">64</h2>
-                    <i class="color-success fa fa-4x fa-briefcase"></i>
-                    <p class="mt-2 no-mb lead small-caps">projects done</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="card card-danger card-block text-center wow zoomInUp animation-delay-4">
-                    <h2 class="counter">600</h2>
-                    <i class="color-danger fa fa-4x fa-comments-o"></i>
-                    <p class="mt-2 no-mb lead small-caps">comments</p>
-                  </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                  <div class="card card-warning card-block text-center wow zoomInUp animation-delay-3">
-                    <h2 class="counter">3500</h2>
-                    <i class="color-warning fa fa-4x fa-group"></i>
-                    <p class="mt-2 no-mb lead small-caps">happy clients</p>
-                  </div>
-                </div>
-              </div>
-              <div class="text-center color-white mw-800 center-block mt-4">
-                <p class="lead lead-lg wow fadeInUp animation-delay-2">Discover our projects and the rigorous process of creation. Our principles are creativity, design, experience and knowledge. We are backed by 20 years of research.</p>
-                <a href="javascript:void(0)" class="btn btn-raised btn-xlg btn-info wow flipInX animation-delay-5">
-                  <i class="fa fa-space-shuttle"></i> I have a project</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="container mt-6">
-        <h1 class="font-light">Tecnologías que te permiten escalar</h1>
-        <p class="lead color-primary">— Combinaciones de plataformas ideales para que tu aplicación use lo último, hecho a la medida para tu necesidad </p>
-        <div class="panel panel-light panel-flat">
-          <!-- Nav tabs -->
-          <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
-            <li class="wow fadeInDown animation-delay-6" role="presentation">
-              <a href="#windows" aria-controls="windows" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="zmdi zmdi-windows"></i>
-                <span class="hidden-xs">Windows</span>
-              </a>
-            </li>
-            <li class="wow fadeInDown animation-delay-4 active" role="presentation">
-              <a href="#macos" aria-controls="macos" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="zmdi zmdi-apple"></i>
-                <span class="hidden-xs">MacOS</span>
-              </a>
-            </li>
-            <li class="wow fadeInDown animation-delay-2" role="presentation">
-              <a href="#linux" aria-controls="linux" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="fa fa-linux"></i>
-                <span class="hidden-xs">Linux</span>
-              </a>
-            </li>
-            <li class="wow fadeInDown animation-delay-4" role="presentation">
-              <a href="#android" aria-controls="android" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="zmdi zmdi-android"></i>
-                <span class="hidden-xs">Android</span>
-              </a>
-            </li>
-            <li class="wow fadeInDown animation-delay-6" role="presentation">
-              <a href="#ios" aria-controls="ios" role="tab" data-toggle="tab" class="withoutripple">
-                <i class="zmdi zmdi-smartphone-iphone"></i>
-                <span class="hidden-xs">IOS</span>
-              </a>
-            </li>
-          </ul>
-          <div class="panel-body">
-            <!-- Tab panes -->
-            <div class="tab-content mt-4">
-              <div role="tabpanel" class="tab-pane fade" id="windows">
-                <div class="row">
-                  <div class="col-md-6 col-md-push-6">
-                    <img src="images/demo/mock4.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
-                  <div class="col-md-6 col-md-pull-6">
-                    <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                    <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                    <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                    <div class="">
-                      <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                        <i class="zmdi zmdi-info"></i> More info</a>
-                      <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                        <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                    </div>
-                  </div>
+
+      <section id="value" class="mt-6">
+        <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
+          <div class="container">
+            <div class="text-center mb-4">
+              <h1 class="color-warning wow zoomInDown blue-genetic title-genetic"><strong>Nuestros valores</strong></h1>
+            </div>
+            <div class="row">
+              <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+                <div class="text-center card-block">
+                  <span class="ms-icon ms-icon-circle ms-icon-xxlg bg-blue-genetic">
+                    <i class="far fa-lightbulb"></i>
+                  </span>
+                  <h4 class="blue-genetic">Creatividad</h4>
+                  <p class="">
+                    Fomentamos una cultura creativa donde nuestros colaboradores se sienten a gusto de imaginar nuevas soluciones.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-blue-genetic btn-raised">Action here</a>
                 </div>
               </div>
-              <div role="tabpanel" class="tab-pane active in fade" id="macos">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="images/demo/mock2.png" alt="" class="img-responsive wow animated zoomIn animation-delay-8"> </div>
-                  <div class="col-md-6">
-                    <h3 class="text-normal wow animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                    <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                    <p class="lead lead-md wow animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                    <div class="">
-                      <a href="javascript:void(0)" class="btn btn-info btn-raised wow animated zoomIn animation-delay-10">
-                        <i class="zmdi zmdi-info"></i> More info</a>
-                      <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 wow animated zoomIn animation-delay-12">
-                        <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                    </div>
-                  </div>
+              <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
+                <div class="text-center card-block">
+                  <span class="ms-icon ms-icon-circle ms-icon-xxlg bg-dark-yellow-genetic">
+                    <i class="far fa-paper-plane"></i>
+                  </span>
+                  <h4 class="dark-yellow-genetic">Innovación</h4>
+                  <p class="">
+                    Creemos que innovar es inventar, es crecer, es correr riesgos y es finalmente romper la regla del “no se puede hacer”.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-yellow-genetic btn-raised">Action here</a>
                 </div>
               </div>
-              <div role="tabpanel" class="tab-pane fade" id="linux">
-                <div class="row">
-                  <div class="col-md-6 col-md-push-6">
-                    <img src="images/demo/mock5.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
-                  <div class="col-md-6 col-md-pull-6">
-                    <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                    <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                    <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                    <div class="">
-                      <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                        <i class="zmdi zmdi-info"></i> More info</a>
-                      <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                        <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                    </div>
-                  </div>
+              <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
+                <div class="text-center card-block">
+                  <span class="ms-icon ms-icon-circle ms-icon-xxlg bg-blue-genetic">
+                    <i class="far fa-heart"></i>
+                  </span>
+                  <h4 class="blue-genetic">Integridad</h4>
+                  <p class="">
+                    La entereza moral es clave para desarrollar organizaciones saludables.
+                    Manejamos nuestro entorno con respeto.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-blue-genetic btn-raised">Action here</a>
                 </div>
               </div>
-              <div role="tabpanel" class="tab-pane fade" id="android">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="images/demo/mock6.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
-                  <div class="col-md-6">
-                    <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                    <p class="lead lead-md  animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                    <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                    <div class="">
-                      <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                        <i class="zmdi zmdi-info"></i> More info</a>
-                      <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                        <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div role="tabpanel" class="tab-pane fade" id="ios">
-                <div class="row">
-                  <div class="col-md-6 col-md-push-6">
-                    <img src="images/demo/mock3.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
-                  <div class="col-md-6 col-md-pull-6">
-                    <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
-                    <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
-                    <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
-                    <div class="">
-                      <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                        <i class="zmdi zmdi-info"></i> More info</a>
-                      <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                        <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                    </div>
-                  </div>
+              <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
+                <div class="text-center card-block">
+                  <span class="ms-icon ms-icon-circle ms-icon-xxlg bg-dark-yellow-genetic">
+                    <i class="zmdi zmdi-trending-up"></i>
+                  </span>
+                  <h4 class="dark-yellow-genetic">Mejoramiento continuo</h4>
+                  <p class="">
+                    Creemos en la administración de calidad.  Mejoramos debilidades y potenciamos nuestras fortalezas.
+                  </p>
+                  <a href="javascript:void(0)" class="btn btn-yellow-genetic btn-raised">Action here</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- panel -->
-      </div>
-      <!-- ms-hero ms-hero-black -->
-      <div class="container mt-4">
-        <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Bienvenidos</h2>
-        <!-- <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Lorem ipsum dolor sit amet,
-          <span class="color-primary">consectetur adipisicing</span> elit. Dolor alias provident excepturi eligendi, nam numquam iusto eum illum, ea quisquam.</p> -->
-        <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4">
-          <span class="color-primary">Genetic Software</span> Costa Rica, nace como una idea de emprendimiento, de pasión por la tecnología,
-          y por deseo infinito de hacer bien las cosas desde la primera vez, con  el objetivo de
-          agradar a nuestros clientes actuales y potenciales. </p>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info">
-              <i class="zmdi zmdi-cloud-outline"></i>
-            </span>
-            <h4 class="color-info">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-info btn-raised">Action here</a>
-          </div>
-        </div>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning">
-              <i class="zmdi zmdi-desktop-mac"></i>
-            </span>
-            <h4 class="color-warning">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-warning btn-raised">Action here</a>
-          </div>
-        </div>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-10">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success">
-              <i class="zmdi zmdi-download"></i>
-            </span>
-            <h4 class="color-success">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-success btn-raised">Action here</a>
-          </div>
-        </div>
-        <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
-          <div class="text-center card-block">
-            <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
-              <i class="zmdi zmdi-flower-alt"></i>
-            </span>
-            <h4 class="color-danger">A feature title</h4>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dicta error.</p>
-            <a href="javascript:void(0)" class="btn btn-danger btn-raised">Action here</a>
-          </div>
-        </div>
-      </div>
-      <!-- container -->
-      <div class="container mt-6">
-        <div class="text-center mb-4">
-          <h2 class="uppercase color-primary">See our subscription plans</h2>
-          <p class="lead uppercase">Surprise with our unique features</p>
-        </div>
-        <div class="row">
-          <div class="col-md-4 price-table price-table-info wow zoomInUp animation-delay-2">
-            <header class="price-table-header">
-              <span class="price-table-category">Personal</span>
-              <h3>
-                <sup>$</sup>19.99
-                <sub>/mo.</sub>
-              </h3>
-            </header>
-            <div class="price-table-body">
-              <ul class="price-table-list">
-                <li>
-                  <i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                <li>
-                  <i class="zmdi zmdi-globe"></i> Voluptate ex quam autem. Dolor.</li>
-                <li>
-                  <i class="zmdi zmdi-settings"></i> Dignissimos velit reiciendis cumque.</li>
-                <li>
-                  <i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                <li>
-                  <i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-              </ul>
-              <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-info btn-raised">
-                  <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 price-table price-table-success prominent wow zoomInDown animation-delay-2">
-            <header class="price-table-header">
-              <span class="price-table-category">Professional</span>
-              <h3>
-                <sup>$</sup>49.99
-                <sub>/mo.</sub>
-              </h3>
-            </header>
-            <div class="price-table-body">
-              <ul class="price-table-list">
-                <li>
-                  <i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                <li>
-                  <i class="zmdi zmdi-globe"></i> Voluptate ex quam autem. Dolor.</li>
-                <li>
-                  <i class="zmdi zmdi-settings"></i> Dignissimos velit reiciendis cumque.</li>
-                <li>
-                  <i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                <li>
-                  <i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-              </ul>
-              <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-success btn-raised">
-                  <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 price-table price-table-warning wow zoomInUp animation-delay-2">
-            <header class="price-table-header">
-              <span class="price-table-category">Business</span>
-              <h3>
-                <sup>$</sup>99.99
-                <sub>/mo.</sub>
-              </h3>
-            </header>
-            <div class="price-table-body">
-              <ul class="price-table-list">
-                <li>
-                  <i class="zmdi zmdi-code"></i> Lorem ipsum dolor sit amet.</li>
-                <li>
-                  <i class="zmdi zmdi-globe"></i> Voluptate ex quam autem. Dolor.</li>
-                <li>
-                  <i class="zmdi zmdi-settings"></i> Dignissimos velit reiciendis cumque.</li>
-                <li>
-                  <i class="zmdi zmdi-cloud"></i> Nihil corrupti soluta vitae non.</li>
-                <li>
-                  <i class="zmdi zmdi-star"></i> Atque molestiae, blanditiis ratione.</li>
-              </ul>
-              <div class="text-center">
-                <a href="javascript:void(0)" class="btn btn-warning btn-raised">
-                  <i class="zmdi zmdi-cloud-download"></i> Get Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
       <!--container -->
-      <div class="wrap wrap-danger mt-6">
+      {{-- <div class="wrap wrap-danger mt-6">
         <h2 class="text-center no-m">¿Qué dicen nuestros clientes?</h2>
         <div id="carousel-example-generic" class="carousel carousel-cards carousel-fade slide" data-ride="carousel" data-interval="7000">
           <!-- Indicators -->
@@ -1776,8 +1040,9 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      </div>
-      <div class="container mt-6">
+      </div> --}}
+      <!-- another section -->
+      {{-- <div class="container mt-6">
         <h2 class="text-center color-primary mb-4">Our Latest Works</h2>
         <div class="owl-dots"></div>
         <div class="owl-carousel owl-theme">
@@ -1917,75 +1182,22 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       <aside class="ms-footbar">
         <div class="container">
           <div class="row">
             <div class="col-md-4 ms-footer-col">
               <div class="ms-footbar-block">
-                <h3 class="ms-footbar-title">Sitemap</h3>
-                <ul class="list-unstyled ms-icon-list three_cols">
-                  <li>
-                    <a href="index.html">
-                      <i class="zmdi zmdi-home"></i> Home</a>
-                  </li>
-                  <li>
-                    <a href="page-blog.html">
-                      <i class="zmdi zmdi-edit"></i> Blog</a>
-                  </li>
-                  <li>
-                    <a href="page-blog.html">
-                      <i class="zmdi zmdi-image-o"></i> Portafolio</a>
-                  </li>
-                  <li>
-                    <a href="portfolio-filters_sidebar.html">
-                      <i class="zmdi zmdi-case"></i> Works</a>
-                  </li>
-                  <li>
-                    <a href="page-timeline_left2.html">
-                      <i class="zmdi zmdi-time"></i> Timeline</a>
-                  </li>
-                  <li>
-                    <a href="page-pricing.html">
-                      <i class="zmdi zmdi-money"></i> Pricing</a>
-                  </li>
-                  <li>
-                    <a href="page-about.html">
-                      <i class="zmdi zmdi-favorite-outline"></i> About Us</a>
-                  </li>
-                  <li>
-                    <a href="page-team2.html">
-                      <i class="zmdi zmdi-accounts"></i> Our Team</a>
-                  </li>
-                  <li>
-                    <a href="page-services.html">
-                      <i class="zmdi zmdi-face"></i> Services</a>
-                  </li>
-                  <li>
-                    <a href="page-faq2.html">
-                      <i class="zmdi zmdi-help"></i> FAQ</a>
-                  </li>
-                  <li>
-                    <a href="page-login2.html">
-                      <i class="zmdi zmdi-lock"></i> Login</a>
-                  </li>
-                  <li>
-                    <a href="page-contact.html">
-                      <i class="zmdi zmdi-email"></i> Contact</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="ms-footbar-block">
-                <h3 class="ms-footbar-title">Subscribe</h3>
-                <p class="">Lorem ipsum Amet fugiat elit nisi anim mollit minim labore ut esse Duis ullamco ad dolor veniam velit.</p>
+                <h3 class="ms-footbar-title">Noticias</h3>
+                <p class="">Suscríbase a nuestro boletín</p>
                 <form>
                   <div class="form-group label-floating mt-2 mb-1">
                     <div class="input-group ms-input-subscribe">
                       <label class="control-label" for="ms-subscribe">
-                        <i class="zmdi zmdi-email"></i> Email Adress</label>
+                        <i class="zmdi zmdi-email"></i> Correo eletrónico</label>
                       <input type="email" id="ms-subscribe" class="form-control"> </div>
                   </div>
-                  <button class="ms-subscribre-btn" type="button">Subscribe</button>
+                  <button class="ms-subscribre-btn" type="button">Suscribirse</button>
                 </form>
               </div>
             </div>
@@ -2056,24 +1268,30 @@
             <div class="col-md-3 col-sm-5 ms-footer-col ms-footer-text-right">
               <div class="ms-footbar-block">
                 <div class="ms-footbar-title">
-                  <span class="ms-logo ms-logo-white ms-logo-sm mr-1">M</span>
-                  <h3 class="no-m ms-site-title">Material
-                    <span>Style</span>
+                  <h3 class="no-m ms-site-title">
+                    Contáctenos
                   </h3>
                 </div>
                 <address class="no-mb">
                   <p>
-                    <i class="color-danger-light zmdi zmdi-pin mr-1"></i> 795 Folsom Ave, Suite 600</p>
-                  <p>
-                    <i class="color-warning-light zmdi zmdi-map mr-1"></i> San Francisco, CA 94107</p>
+                    <i class="color-danger-light zmdi zmdi-pin mr-1"></i> Santa Ana, San José, Costa Rica</p>
+                </address>
+                <br>
+                <address class="no-mb">
                   <p>
                     <i class="color-info-light zmdi zmdi-email mr-1"></i>
-                    <a href="mailto:joe@example.com">example@domain.com</a>
+                    <a href="mailto:joe@example.com">carlos@geneticsoftware.net</a>
                   </p>
                   <p>
-                    <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+34 123 456 7890 </p>
+                    <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+506 88157067 </p>
+                </address>
+                <address class="no-mb">
                   <p>
-                    <i class="color-success-light fa fa-fax mr-1"></i>+34 123 456 7890 </p>
+                    <i class="color-info-light zmdi zmdi-email mr-1"></i>
+                    <a href="mailto:joe@example.com">stefania@geneticsoftware.net</a>
+                  </p>
+                  <p>
+                    <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+506 88972210 </p>
                 </address>
               </div>
               <div class="ms-footbar-block">
@@ -2088,16 +1306,6 @@
                   <a href="javascript:void(0)" class="btn-circle btn-youtube">
                     <i class="zmdi zmdi-youtube"></i>
                   </a>
-                  <br>
-                  <a href="javascript:void(0)" class="btn-circle btn-google">
-                    <i class="zmdi zmdi-google"></i>
-                  </a>
-                  <a href="javascript:void(0)" class="btn-circle btn-instagram">
-                    <i class="zmdi zmdi-instagram"></i>
-                  </a>
-                  <a href="javascript:void(0)" class="btn-circle btn-github">
-                    <i class="zmdi zmdi-github"></i>
-                  </a>
                 </div>
               </div>
             </div>
@@ -2106,7 +1314,7 @@
       </aside>
       <footer class="ms-footer">
         <div class="container">
-          <p>Copyright &copy; Material Style 2017</p>
+          <p>Copyright &copy; Genetic Software {{{ date("Y") }}}, Think your apps, we make'em real!</p>
         </div>
       </footer>
       <div class="btn-back-top">

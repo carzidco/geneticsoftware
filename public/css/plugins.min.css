@@ -5770,7 +5770,9 @@ pre code {
         left: 58.33333333%
     }
     .col-md-push-6 {
-        left: 50%
+        left: 50%;
+        font-size: 18px;
+        text-align: justify;
     }
     .col-md-push-5 {
         left: 41.66666667%
