@@ -2394,7 +2394,7 @@ legend {
 }
 
 .navbar {
-    background-color: #03a9f4;
+    background-color: #52adcf;
     border: 0;
     border-radius: 0
 }
@@ -2581,7 +2581,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 
 .navbar,
 .navbar.navbar-default {
-    background-color: #03a9f4;
+    background-color: #52adcf;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -2621,13 +2621,13 @@ fieldset[disabled] .navbar .btn-link:focus {
 .navbar .dropdown-menu li>a:focus,
 .navbar.navbar-default .dropdown-menu li>a:hover,
 .navbar.navbar-default .dropdown-menu li>a:focus {
-    color: #03a9f4;
+    color: #52adcf;
     background-color: #eee
 }
 
 .navbar .dropdown-menu .active>a,
 .navbar.navbar-default .dropdown-menu .active>a {
-    background-color: #03a9f4;
+    background-color: #52adcf;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -2684,7 +2684,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 
 .navbar.navbar-primary {
-    background-color: #03a9f4;
+    background-color: #52adcf;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -2714,12 +2714,12 @@ fieldset[disabled] .navbar .btn-link:focus {
 
 .navbar.navbar-primary .dropdown-menu li>a:hover,
 .navbar.navbar-primary .dropdown-menu li>a:focus {
-    color: #03a9f4;
+    color: #52adcf;
     background-color: #eee
 }
 
 .navbar.navbar-primary .dropdown-menu .active>a {
-    background-color: #03a9f4;
+    background-color: #52adcf;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -2809,7 +2809,7 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 
 .navbar.navbar-info .dropdown-menu .active>a {
-    background-color: #00bcd4;
+    background-color: #52adcf;
     color: rgba(255, 255, 255, .84)
 }
 
@@ -7005,7 +7005,7 @@ blockquote.ms-blockquote footer {
 }
 
 .btn-circle.btn-circle-primary {
-    color: #03a9f4
+    color: #52adcf
 }
 
 .btn-circle.btn-circle-primary:before {
@@ -7442,19 +7442,19 @@ blockquote.ms-blockquote footer {
 }
 
 .btn-circle.btn-circle-raised.btn-circle-white.btn-circle-royal {
-    color: #9c27b0
+    color: #52adcf
 }
 
 .btn-circle.btn-circle-raised.btn-circle-primary {
-    background-color: #03a9f4
+    background-color: #52adcf
 }
 
 .btn-circle.btn-circle-raised.btn-circle-primary:before {
-    background-color: #0398db
+    background-color: #52adcf
 }
 
 .btn-circle.btn-circle-raised.btn-circle-info {
-    background-color: #00bcd4
+    background-color: #52adcf
 }
 
 .btn-circle.btn-circle-raised.btn-circle-info:before {
@@ -9010,14 +9010,14 @@ label.color-white {
 
 .ms-header .header-right .search-form .search-input:focus {
     width: 250px;
-    border-bottom: solid 3px #03a9f4;
+    border-bottom: solid 3px #52adcf;
     border-radius: 0
 }
 
 .ms-header .header-right .search-form .search-input:focus+label {
     -webkit-transform: ScaleX(-1);
     transform: ScaleX(-1);
-    color: #03a9f4
+    color: #52adcf
 }
 
 .ms-header .header-right .search-form .search-input:focus+label:before {
@@ -9039,7 +9039,7 @@ label.color-white {
 }
 
 .ms-header.ms-header-dark .search-form label:before {
-    background-color: #03a9f4
+    background-color: #52adcf
 }
 
 .ms-header.ms-header-dark .search-form label:hover {
@@ -9072,7 +9072,7 @@ label.color-white {
 }
 
 .ms-header.ms-header-dark .search-form .search-input:focus {
-    border-bottom: solid 3px #03a9f4
+    border-bottom: solid 3px #52adcf
 }
 
 .ms-header.ms-header-dark .search-form .search-input:focus+label {
@@ -9084,7 +9084,7 @@ label.color-white {
 }
 
 .ms-header.ms-header-dark .btn-circle-primary:before {
-    background-color: #03a9f4
+    background-color: #52adcf
 }
 
 .ms-header.ms-header-dark .btn-circle-primary:hover,
@@ -9093,7 +9093,7 @@ label.color-white {
 }
 
 .ms-header.ms-header-primary {
-    background-color: #03a9f4;
+    background-color: #52adcf;
     color: #fff
 }
 
@@ -9107,7 +9107,7 @@ label.color-white {
 
 .ms-header.ms-header-primary .btn-circle:hover,
 .ms-header.ms-header-primary .btn-circle:focus {
-    color: #03a9f4
+    color: #52adcf
 }
 
 .ms-header.ms-header-primary .btn-circle.no-focus:focus {
@@ -9122,7 +9122,7 @@ label.color-white {
 }
 
 .ms-header.ms-header-primary .btn-circle.no-focus:hover {
-    color: #03a9f4
+    color: #52adcf
 }
 
 .ms-header.ms-header-primary .btn-circle.no-focus:hover:before {
@@ -9137,7 +9137,7 @@ label.color-white {
 }
 
 .ms-header.ms-header-primary .ms-logo {
-    color: #03a9f4;
+    color: #52adcf;
     background-color: #fff;
     text-shadow: 1px 1px 0 rgba(3, 169, 244, .04), 1px 2px 0 rgba(3, 169, 244, .04), 1px 3px 0 rgba(3, 169, 244, .04), 2px 4px 0 rgba(3, 169, 244, .04), 3px 5px 0 rgba(3, 169, 244, .04), 4px 6px 0 rgba(3, 169, 244, .04), 5px 7px 0 rgba(3, 169, 244, .04), 6px 8px 0 rgba(3, 169, 244, .04), 7px 9px 0 rgba(3, 169, 244, .04), 8px 10px 0 rgba(3, 169, 244, .04), 9px 11px 0 rgba(3, 169, 244, .04), 10px 12px 0 rgba(3, 169, 244, .04), 11px 13px 0 rgba(3, 169, 244, .04), 12px 14px 0 rgba(3, 169, 244, .04), 13px 15px 0 rgba(3, 169, 244, .04), 14px 16px 0 rgba(3, 169, 244, .04), 15px 17px 0 rgba(3, 169, 244, .04), 16px 18px 0 rgba(3, 169, 244, .04), 17px 19px 0 rgba(3, 169, 244, .04), 18px 20px 0 rgba(3, 169, 244, .04), 19px 21px 0 rgba(3, 169, 244, .04), 20px 22px 0 rgba(3, 169, 244, .04), 21px 23px 0 rgba(3, 169, 244, .04)
 }
@@ -9151,7 +9151,7 @@ label.color-white {
 }
 
 .ms-header.ms-header-primary .search-form label:hover {
-    color: #03a9f4
+    color: #52adcf
 }
 
 .ms-header.ms-header-primary .search-form .search-input {
@@ -9204,7 +9204,7 @@ label.color-white {
 }
 
 .ms-logo.ms-logo-white {
-    color: #03a9f4;
+    color: #52adcf;
     background-color: #fff;
     text-shadow: 1px 1px 0 rgba(3, 169, 244, .04), 1px 2px 0 rgba(3, 169, 244, .04), 1px 3px 0 rgba(3, 169, 244, .04), 2px 4px 0 rgba(3, 169, 244, .04), 3px 5px 0 rgba(3, 169, 244, .04), 4px 6px 0 rgba(3, 169, 244, .04), 5px 7px 0 rgba(3, 169, 244, .04), 6px 8px 0 rgba(3, 169, 244, .04), 7px 9px 0 rgba(3, 169, 244, .04), 8px 10px 0 rgba(3, 169, 244, .04), 9px 11px 0 rgba(3, 169, 244, .04), 10px 12px 0 rgba(3, 169, 244, .04), 11px 13px 0 rgba(3, 169, 244, .04), 12px 14px 0 rgba(3, 169, 244, .04), 13px 15px 0 rgba(3, 169, 244, .04), 14px 16px 0 rgba(3, 169, 244, .04), 15px 17px 0 rgba(3, 169, 244, .04), 16px 18px 0 rgba(3, 169, 244, .04), 17px 19px 0 rgba(3, 169, 244, .04), 18px 20px 0 rgba(3, 169, 244, .04), 19px 21px 0 rgba(3, 169, 244, .04), 20px 22px 0 rgba(3, 169, 244, .04), 21px 23px 0 rgba(3, 169, 244, .04)
 }
@@ -9224,7 +9224,7 @@ label.color-white {
 }
 
 .ms-navbar .ms-logo {
-    color: #03a9f4;
+    color: #52adcf;
     background-color: #fff;
     text-shadow: 1px 1px 0 rgba(3, 169, 244, .04), 1px 2px 0 rgba(3, 169, 244, .04), 1px 3px 0 rgba(3, 169, 244, .04), 2px 4px 0 rgba(3, 169, 244, .04), 3px 5px 0 rgba(3, 169, 244, .04), 4px 6px 0 rgba(3, 169, 244, .04), 5px 7px 0 rgba(3, 169, 244, .04), 6px 8px 0 rgba(3, 169, 244, .04), 7px 9px 0 rgba(3, 169, 244, .04), 8px 10px 0 rgba(3, 169, 244, .04), 9px 11px 0 rgba(3, 169, 244, .04), 10px 12px 0 rgba(3, 169, 244, .04), 11px 13px 0 rgba(3, 169, 244, .04), 12px 14px 0 rgba(3, 169, 244, .04), 13px 15px 0 rgba(3, 169, 244, .04), 14px 16px 0 rgba(3, 169, 244, .04), 15px 17px 0 rgba(3, 169, 244, .04), 16px 18px 0 rgba(3, 169, 244, .04), 17px 19px 0 rgba(3, 169, 244, .04), 18px 20px 0 rgba(3, 169, 244, .04), 19px 21px 0 rgba(3, 169, 244, .04), 20px 22px 0 rgba(3, 169, 244, .04), 21px 23px 0 rgba(3, 169, 244, .04)
 }
@@ -9232,12 +9232,12 @@ label.color-white {
 .ms-navbar.ms-navbar-white .ms-logo,
 .ms-navbar.ms-navbar-dark .ms-logo {
     color: #fff;
-    background-color: #03a9f4;
+    background-color: #52adcf;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, .05), 1px 2px 0 rgba(0, 0, 0, .05), 1px 3px 0 rgba(0, 0, 0, .05), 2px 4px 0 rgba(0, 0, 0, .05), 3px 5px 0 rgba(0, 0, 0, .05), 4px 6px 0 rgba(0, 0, 0, .05), 5px 7px 0 rgba(0, 0, 0, .05), 6px 8px 0 rgba(0, 0, 0, .05), 7px 9px 0 rgba(0, 0, 0, .05), 8px 10px 0 rgba(0, 0, 0, .05), 9px 11px 0 rgba(0, 0, 0, .05), 10px 12px 0 rgba(0, 0, 0, .05), 11px 13px 0 rgba(0, 0, 0, .05), 12px 14px 0 rgba(0, 0, 0, .05), 13px 15px 0 rgba(0, 0, 0, .05), 14px 16px 0 rgba(0, 0, 0, .05), 15px 17px 0 rgba(0, 0, 0, .05), 16px 18px 0 rgba(0, 0, 0, .05), 17px 19px 0 rgba(0, 0, 0, .05), 18px 20px 0 rgba(0, 0, 0, .05), 19px 21px 0 rgba(0, 0, 0, .05), 20px 22px 0 rgba(0, 0, 0, .05), 21px 23px 0 rgba(0, 0, 0, .05)
 }
 
 .ms-navbar {
-    background-color: #03a9f4;
+    background-color: #52adcf;
     color: #fff;
     border: none;
     height: 50px;
@@ -9353,7 +9353,7 @@ label.color-white {
 .ms-navbar .navbar-nav li a {
     font-weight: 400;
     color: #fff;
-    padding: 15px 20px
+    padding: 15px 20px;
 }
 
 .ms-navbar .navbar-nav li a i {
@@ -10016,7 +10016,7 @@ label.color-white {
 
 .ms-navbar-white.navbar-mode .navbar-nav>li>a:before,
 .ms-header-white+.ms-navbar-white .navbar-nav>li>a:before {
-    background-color: #03a9f4
+    background-color: #52adcf
 }
 
 .ms-navbar-white.navbar-mode .navbar-nav>li>a:hover,
@@ -13392,6 +13392,29 @@ pre.line-numbers>code {
     z-index: 1
 }
 
+.ms-hero-bg-yellow {
+    position: relative
+}
+
+.ms-hero-bg-yellow:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(165, 171, 65, .85);
+    z-index: 0
+}
+
+.ms-hero-bg-yellow .container {
+    position: relative;
+    z-index: 1
+}
+
 .ms-hero-bg-dark {
     position: relative
 }
@@ -16721,7 +16744,7 @@ body.lb-disable-scrolling {
 
 .ms-slidebar .ms-slidebar-header {
     min-height: 150px;
-    background-image: url(../images/bg-slidebar.png);
+    background-image: url(../images/bg-slidebar-genetic.png);
     position: relative
 }
 

@@ -8,19 +8,45 @@
     <meta name="theme-color" content="#333">
     <title>Genetic Software</title>
     <meta name="description" content="Genetic Software">
-    <link rel="shortcut icon" href="images/favicon.png?v=3">
+    <link rel="shortcut icon" href="{{ asset('images/molecule.png') }}">
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- <link rel="stylesheet" href="../css/preload.min.css" /> -->
     <link href="{{ asset('css/plugins.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/genetic_style.css') }}" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <link href="{{ asset('plugins/revolution/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/revolution/revolution/css/settings.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/revolution/revolution/css/layers.css') }}" rel="stylesheet">
+    <link href="{{ asset('plugins/revolution/revolution/css/navigation.css') }}" rel="stylesheet">
+    <script src="{{ asset('plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js') }}"></script>
+    <link href="{{ asset('plugins/revolution/revolution-addons/typewriter/css/typewriter.css') }}" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
+    @if (Session::has('message'))
+      {{-- <div class="alert-box success" id="message_alert">
+        {{{ Session::get('message') }}}
+      </div> --}}
+      <div class="modal modal-dark" id="message_alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6"  style="display: block">
+        <div class="modal-dialog animated zoomIn animated-3x" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+                    <h3 class="modal-title" id="myModalLabel">{{{ Session::get('title')  }}}</h3>
+                </div>
+                <div class="modal-body">
+                  <p>{{{ Session::get('message')  }}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @endif
     <div id="ms-preload" class="ms-preload">
       <div id="status">
         <div class="spinner">
@@ -42,9 +68,9 @@
               </button>
               <div class="modal-title text-center">
                 <!-- <span class="ms-logo ms-logo-white ms-logo-sm mr-1">G</span> -->
-                <span class="ms-logo animated zoomInDown animation-delay-5">
+                {{-- <span class="ms-logo animated zoomInDown animation-delay-5">
                   <img src="../images/genetic_main_logo.png" alt="" width="40" height="40">
-                </span>
+                </span> --}}
                 <h3 class="no-m ms-site-title">Genetic
                   <span>Software</span>
                 </h3>
@@ -76,16 +102,16 @@
                           <span class="input-group-addon">
                             <i class="zmdi zmdi-account"></i>
                           </span>
-                          <label class="control-label" for="ms-form-user">Username</label>
-                          <input type="text" id="ms-form-user" class="form-control"> </div>
+                          <label class="control-label" for="ms-form-user-popup">Username</label>
+                          <input type="text" id="ms-form-user-popup" class="form-control"> </div>
                       </div>
                       <div class="form-group label-floating">
                         <div class="input-group">
                           <span class="input-group-addon">
                             <i class="zmdi zmdi-lock"></i>
                           </span>
-                          <label class="control-label" for="ms-form-pass">Password</label>
-                          <input type="password" id="ms-form-pass" class="form-control"> </div>
+                          <label class="control-label" for="ms-form-pass-popup-x">Password</label>
+                          <input type="password" id="ms-form-pass-popup-x" class="form-control"> </div>
                       </div>
                       <div class="row mt-2">
                         <div class="col-md-6">
@@ -120,32 +146,32 @@
                           <span class="input-group-addon">
                             <i class="zmdi zmdi-account"></i>
                           </span>
-                          <label class="control-label" for="ms-form-user">Username</label>
-                          <input type="text" id="ms-form-user" class="form-control"> </div>
+                          <label class="control-label" for="ms-form-user-popup-x">Username</label>
+                          <input type="text" id="ms-form-user-popup-x" class="form-control"> </div>
                       </div>
                       <div class="form-group label-floating">
                         <div class="input-group">
                           <span class="input-group-addon">
                             <i class="zmdi zmdi-email"></i>
                           </span>
-                          <label class="control-label" for="ms-form-email">Email</label>
-                          <input type="email" id="ms-form-email" class="form-control"> </div>
+                          <label class="control-label" for="ms-form-email-popup">Email</label>
+                          <input type="email" id="ms-form-email-popup" class="form-control"> </div>
                       </div>
                       <div class="form-group label-floating">
                         <div class="input-group">
                           <span class="input-group-addon">
                             <i class="zmdi zmdi-lock"></i>
                           </span>
-                          <label class="control-label" for="ms-form-pass">Password</label>
-                          <input type="password" id="ms-form-pass" class="form-control"> </div>
+                          <label class="control-label" for="ms-form-pass-popup">Password</label>
+                          <input type="password" id="ms-form-pass-popup" class="form-control"> </div>
                       </div>
                       <div class="form-group label-floating">
                         <div class="input-group">
                           <span class="input-group-addon">
                             <i class="zmdi zmdi-lock"></i>
                           </span>
-                          <label class="control-label" for="ms-form-pass">Re-type Password</label>
-                          <input type="password" id="ms-form-pass" class="form-control"> </div>
+                          <label class="control-label" for="ms-reform-pass">Re-type Password</label>
+                          <input type="password" id="ms-form-repass-popup" class="form-control"> </div>
                       </div>
                       <button class="btn btn-raised btn-block btn-primary">Register Now</button>
                     </fieldset>
@@ -185,11 +211,12 @@
             <a href="{{ url('/') }}">
               <!-- <img src="images/demo/logo-header.png" alt=""> -->
               <!-- <span class="ms-logo animated zoomInDown animation-delay-5">G</span> -->
-              <span class="ms-logo animated zoomInDown animation-delay-5">
+              {{-- <span class="ms-logo animated zoomInDown animation-delay-5">
                 <img src="../images/genetic_main_logo.png" alt="" width="40" height="40">
-              </span>
-              <h1 class="animated fadeInRight animation-delay-6">Genetic
-                <span>Software</span>
+              </span> --}}
+              <h1 class="animated fadeInRight animation-delay-6">
+                <span>Genetic</span>&nbsp;
+                <span><strong>Software</strong></span>
               </h1>
             </a>
           </div>
@@ -201,14 +228,24 @@
                     <i class="zmdi zmdi-google"></i>
                   </a>
                 </li> --}}
-                <li class="animated fadeInRight animation-delay-2">
+                <li class="animated fadeInRight animation-delay-4">
                   <a href="javascript:void(0)" class="btn-circle btn-facebook">
                     <i class="zmdi zmdi-facebook"></i>
                   </a>
                 </li>
-                <li class="animated fadeInRight animation-delay-1">
+                <li class="animated fadeInRight animation-delay-3">
                   <a href="javascript:void(0)" class="btn-circle btn-twitter">
                     <i class="zmdi zmdi-twitter"></i>
+                  </a>
+                </li>
+                <li class="animated fadeInRight animation-delay-2">
+                  <a href="javascript:void(0)" class="btn-circle btn-youtube">
+                    <i class="zmdi zmdi-youtube"></i>
+                  </a>
+                </li>
+                <li class="animated fadeInRight animation-delay-1">
+                  <a href="javascript:void(0)" class="btn-circle btn-linkedin">
+                    <i class="zmdi zmdi-linkedin"></i>
                   </a>
                 </li>
               </ul>
@@ -216,15 +253,6 @@
                 <i class="zmdi zmdi-share"></i>
               </a>
             </div>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-primary no-focus animated zoomInDown animation-delay-8" data-toggle="modal" data-target="#ms-account-modal">
-              <i class="zmdi zmdi-account"></i>
-            </a>
-            <form class="search-form animated zoomInDown animation-delay-9">
-              <input id="search-box" type="text" class="search-input" placeholder="Search..." name="q" />
-              <label for="search-box">
-                <i class="zmdi zmdi-search"></i>
-              </label>
-            </form>
             <a href="javascript:void(0)" class="btn-ms-menu btn-circle btn-circle-primary sb-toggle-left animated zoomInDown animation-delay-10">
               <i class="zmdi zmdi-menu"></i>
             </a>
@@ -234,43 +262,43 @@
       <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-white">
         <div class="container container-full">
           <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{{ url('/') }}}">
               <!-- <img src="images/demo/logo-navbar.png" alt=""> -->
-              <span class="ms-logo ms-logo-sm">M</span>
-              <span class="ms-title">Material
-                <strong>Style</strong>
+              <span class="ms-title">Genetic
+                &nbsp;
+                <span class="red-genetic"><strong>Software</strong></span> 
               </span>
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="dropdown active">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+              <li class="dropdown">
+                <a data-scroll href="#home" class="dropdown-toggle animated fadeIn animation-delay-2 link">  
                   Inicio
                 </a>
               </li>
               <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                <a data-scroll href="#aboutus" class="dropdown-toggle animated fadeIn animation-delay-4 link">
                   Nosotros
                 </a>
               </li>
               <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                <a data-scroll href="#services" class="dropdown-toggle animated fadeIn animation-delay-5 link">
                   Servicios
                 </a>
               </li>
               <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                <a data-scroll href="#technologies" class="dropdown-toggle animated fadeIn animation-delay-6 link">
                   Tecnologías
                 </a>
               </li>
               <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                <a data-scroll href="#values" class="dropdown-toggle animated fadeIn animation-delay-7 link">
                   Nuestros valores
                 </a>
               </li>
               <li class="dropdown">
-                <a href="javascript:void(0)" class="dropdown-toggle animated fadeIn animation-delay-4" data-toggle="dropdown" data-hover="dropdown" data-name="home">
+                <a data-scroll href="#contact" class="dropdown-toggle animated fadeIn animation-delay-8 link">
                   Contacto
                 </a>
               </li>
@@ -284,7 +312,8 @@
         </div>
         <!-- container -->
       </nav>
-      <div class="ms-hero ms-hero-material">
+
+      {{-- <div class="ms-hero ms-hero-material">
         <span class="ms-hero-bg"></span>
         <div class="container">
           <div class="col-lg-6 col-md-7">
@@ -473,8 +502,10 @@
             </div>
           </div>
         </div>
-        <!-- container -->
-      </div>
+      </div> --}}
+      <section id="home">
+        @include('partials._video_carrousel')
+      </section>
       <!-- container -->
       <section id="aboutus" class="mt-6">
         <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
@@ -545,12 +576,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="text-center color-white mw-800 center-block mt-4">
+                {{-- <div class="text-center color-white mw-800 center-block mt-4">
                   <p class="lead lead-lg wow fadeInUp animation-delay-2">Discover our projects and the rigorous process of creation. Our principles are creativity, design, experience and knowledge. We are backed by 20 years of research.</p>
                   <a href="javascript:void(0)" class="btn btn-raised btn-xlg btn-info wow flipInX animation-delay-5">
                      Cotice su proyecto
                    </a>
-                </div>
+                </div> --}}
               </div>
             </div>
           </div>
@@ -765,12 +796,6 @@
                             Modelamos sus aplicaciones con frameworks ligeros que le permitan una experiencia veloz y provechosa
                             al usuario desde cualquier dispositivo.
                           </p>
-                          <div class="">
-                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                              <i class="zmdi zmdi-info"></i> More info</a>
-                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -786,12 +811,6 @@
                           <p class="lead lead-md animated fadeInUp animation-delay-6">
                             Solo piense que desea, nosotros nos encargamos de que sus aplicaciones cobren vida.
                           </p>
-                          <div class="">
-                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                              <i class="zmdi zmdi-info"></i> More info</a>
-                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -810,12 +829,6 @@
                             Nosotros le ayudamos para que su sistema o aplicación obtenga la productividad deseada
                             partiendo del existente y creando una herramienta escalable.
                           </p>
-                          <div class="">
-                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                              <i class="zmdi zmdi-info"></i> More info</a>
-                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -835,12 +848,6 @@
                           <p class="lead lead-md animated fadeInUp animation-delay-6">
                             Incopore la inteligencia artificial en la interaccion diaria con sus clientes.
                           </p>
-                          <div class="">
-                            <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10">
-                              <i class="zmdi zmdi-info"></i> More info</a>
-                            <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12">
-                              <i class="zmdi zmdi-chart-donut"></i> Action here </a>
-                          </div>
                         </div>
                       </div>
                     </div>
@@ -852,7 +859,7 @@
         </div>
       </section>
 
-      <section id="value" class="mt-6">
+      <section id="values" class="mt-6">
         <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
           <div class="container">
             <div class="text-center mb-4">
@@ -868,7 +875,6 @@
                   <p class="">
                     Fomentamos una cultura creativa donde nuestros colaboradores se sienten a gusto de imaginar nuevas soluciones.
                   </p>
-                  <a href="javascript:void(0)" class="btn btn-blue-genetic btn-raised">Action here</a>
                 </div>
               </div>
               <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
@@ -880,7 +886,6 @@
                   <p class="">
                     Creemos que innovar es inventar, es crecer, es correr riesgos y es finalmente romper la regla del “no se puede hacer”.
                   </p>
-                  <a href="javascript:void(0)" class="btn btn-yellow-genetic btn-raised">Action here</a>
                 </div>
               </div>
               <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-4">
@@ -893,7 +898,6 @@
                     La entereza moral es clave para desarrollar organizaciones saludables.
                     Manejamos nuestro entorno con respeto.
                   </p>
-                  <a href="javascript:void(0)" class="btn btn-blue-genetic btn-raised">Action here</a>
                 </div>
               </div>
               <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-8">
@@ -905,7 +909,6 @@
                   <p class="">
                     Creemos en la administración de calidad.  Mejoramos debilidades y potenciamos nuestras fortalezas.
                   </p>
-                  <a href="javascript:void(0)" class="btn btn-yellow-genetic btn-raised">Action here</a>
                 </div>
               </div>
             </div>
@@ -1183,6 +1186,52 @@
           </div>
         </div>
       </div> --}}
+      <section id="contact" class="mt-6">
+        <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
+          {{-- <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed"> --}}
+          <div class="container">
+            <div class="text-center mb-4">
+              <h1 class="color-warning wow zoomInDown blue-genetic title-genetic"><strong>Contacto</strong></h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card card-primary animated zoomInUp animation-delay-5">
+                  <div class="card-block">
+                    <form id="contact-form" class="form-horizontal" method="post" action="{{ asset('/contact/send_email') }}">
+                      {{ csrf_field() }}
+                      <fieldset>
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <input type="text" class="form-control" name="name" placeholder="Nombre"> </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <input type="email" class="form-control" name="email" placeholder="Correo Electrónico"> </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <input type="text" class="form-control" name="subject_info" placeholder="Título"> </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <textarea class="form-control" rows="5" name="message_info" placeholder="Tu mensaje..."></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-md-12">
+                            <button type="submit" class="btn btn-raised bg-blue-genetic" style="color: white">Enviar</button>
+                          </div>
+                        </div>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- container -->
+        </div>
+      </section>
       <aside class="ms-footbar">
         <div class="container">
           <div class="row">
@@ -1195,7 +1244,7 @@
                     <div class="input-group ms-input-subscribe">
                       <label class="control-label" for="ms-subscribe">
                         <i class="zmdi zmdi-email"></i> Correo eletrónico</label>
-                      <input type="email" id="ms-subscribe" class="form-control"> </div>
+                      <input type="email" id="ms-subscribe" class="form-control" style="color: black !important"> </div>
                   </div>
                   <button class="ms-subscribre-btn" type="button">Suscribirse</button>
                 </form>
@@ -1203,74 +1252,36 @@
             </div>
             <div class="col-md-5 col-sm-7 ms-footer-col ms-footer-alt-color">
               <div class="ms-footbar-block">
-                <h3 class="ms-footbar-title text-center mb-2">Last Articles</h3>
+                <h3 class="ms-footbar-title text-center mb-2">Artículos recientes</h3>
                 <div class="ms-footer-media">
-                  <div class="media">
-                    <div class="media-left media-middle">
-                      <a href="javascript:void(0)">
-                        <img class="media-object media-object-circle" src="images/demo/p75.jpg" alt="..."> </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">
-                        <a href="javascript:void(0)">Lorem ipsum dolor sit expedita cumque amet consectetur adipisicing repellat</a>
-                      </h4>
-                      <div class="media-footer">
-                        <span>
-                          <i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                        <span>
-                          <i class="zmdi zmdi-folder-outline color-warning-light"></i>
-                          <a href="javascript:void(0)">Design</a>
-                        </span>
+                  @foreach($posts as $p)
+                    <div class="media">
+                      <div class="media-left media-middle">
+                        <a href="javascript:void(0)">
+                          <img class="media-object media-object-circle" src="images/demo/p75.jpg" alt="..."> </a>
+                      </div>
+                      <div class="media-body">
+                        <h4 class="media-heading">
+                          <a href="{{{ $p->link }}}" target="_blank">{{{ $p->slug }}}</a>
+                        </h4>
+                        <div class="media-footer">
+                          <span>
+                            <i class="zmdi zmdi-time color-info-light"></i>{{{ $p->formatted_date }}}</span>
+                          {{-- <span>
+                            <i class="zmdi zmdi-folder-outline color-warning-light"></i>
+                            <a href="javascript:void(0)">Design</a>
+                          </span> --}}
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="media">
-                    <div class="media-left media-middle">
-                      <a href="javascript:void(0)">
-                        <img class="media-object media-object-circle" src="images/demo/p75.jpg" alt="..."> </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">
-                        <a href="javascript:void(0)">Labore ut esse Duis consectetur expedita cumque ullamco ad dolor veniam velit</a>
-                      </h4>
-                      <div class="media-footer">
-                        <span>
-                          <i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                        <span>
-                          <i class="zmdi zmdi-folder-outline color-warning-light"></i>
-                          <a href="javascript:void(0)">News</a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="media-left media-middle">
-                      <a href="javascript:void(0)">
-                        <img class="media-object media-object-circle" src="images/demo/p75.jpg" alt="..."> </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">
-                        <a href="javascript:void(0)">voluptates deserunt ducimus expedita cumque quaerat molestiae labore</a>
-                      </h4>
-                      <div class="media-footer">
-                        <span>
-                          <i class="zmdi zmdi-time color-info-light"></i> August 18, 2016</span>
-                        <span>
-                          <i class="zmdi zmdi-folder-outline color-warning-light"></i>
-                          <a href="javascript:void(0)">Productivity</a>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
+                  @endforeach
                 </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-5 ms-footer-col ms-footer-text-right">
               <div class="ms-footbar-block">
                 <div class="ms-footbar-title">
-                  <h3 class="no-m ms-site-title">
-                    Contáctenos
-                  </h3>
+                  <h3 class="ms-footbar-title">Contáctenos</h3>
                 </div>
                 <address class="no-mb">
                   <p>
@@ -1295,7 +1306,7 @@
                 </address>
               </div>
               <div class="ms-footbar-block">
-                <h3 class="ms-footbar-title">Social Media</h3>
+                <h3 class="ms-footbar-title">Redes Sociales</h3>
                 <div class="ms-footbar-social">
                   <a href="javascript:void(0)" class="btn-circle btn-facebook">
                     <i class="zmdi zmdi-facebook"></i>
@@ -1306,6 +1317,9 @@
                   <a href="javascript:void(0)" class="btn-circle btn-youtube">
                     <i class="zmdi zmdi-youtube"></i>
                   </a>
+                  <a href="javascript:void(0)" class="btn-circle btn-linkedin">
+                    <i class="zmdi zmdi-linkedin"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1314,7 +1328,7 @@
       </aside>
       <footer class="ms-footer">
         <div class="container">
-          <p>Copyright &copy; Genetic Software {{{ date("Y") }}}, Think your apps, we make'em real!</p>
+          <p>Copyright &copy; Genetic Software {{{ date("Y") }}}, <strong><i>Somos Software que potencia Marcas</i></strong></p>
         </div>
       </footer>
       <div class="btn-back-top">
@@ -1324,205 +1338,119 @@
       </div>
     </div>
     <!-- sb-site-container -->
-    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
-      <div class="sb-slidebar-container">
-        <header class="ms-slidebar-header">
-          <div class="ms-slidebar-login">
-            <a href="javascript:void(0)" class="withripple">
-              <i class="zmdi zmdi-account"></i> Login</a>
-            <a href="javascript:void(0)" class="withripple">
-              <i class="zmdi zmdi-account-add"></i> Register</a>
-          </div>
-          <div class="ms-slidebar-title">
-            <form class="search-form">
-              <input id="search-box-slidebar" type="text" class="search-input" placeholder="Search..." name="q" />
-              <label for="search-box-slidebar">
-                <i class="zmdi zmdi-search"></i>
-              </label>
-            </form>
-            <div class="ms-slidebar-t">
-              <span class="ms-logo ms-logo-sm">M</span>
-              <h3>Material
-                <span>Style</span>
-              </h3>
-            </div>
-          </div>
-        </header>
-        <ul class="ms-slidebar-menu" id="slidebar-menu" role="tablist" aria-multiselectable="true">
-          <li class="panel" role="tab" id="sch1">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc1" aria-expanded="false" aria-controls="sc1">
-              <i class="zmdi zmdi-home"></i> Home </a>
-            <ul id="sc1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch1">
-              <li>
-                <a href="index.html">Default Home</a>
-              </li>
-              <li>
-                <a href="home-generic-2.html">Home Black Slider</a>
-              </li>
-              <li>
-                <a href="home-landing.html">Home Landing Intro</a>
-              </li>
-              <li>
-                <a href="home-landing3.html">Home Landing Video</a>
-              </li>
-              <li>
-                <a href="home-shop.html">Home Shop 1</a>
-              </li>
-            </ul>
-          </li>
-          <li class="panel" role="tab" id="sch2">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc2" aria-expanded="false" aria-controls="sc2">
-              <i class="zmdi zmdi-desktop-mac"></i> Pages </a>
-            <ul id="sc2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch2">
-              <li>
-                <a href="page-about.html">About US</a>
-              </li>
-              <li>
-                <a href="page-team.html">Our Team</a>
-              </li>
-              <li>
-                <a href="page-product.html">Products</a>
-              </li>
-              <li>
-                <a href="page-services.html">Services</a>
-              </li>
-              <li>
-                <a href="page-faq.html">FAQ</a>
-              </li>
-              <li>
-                <a href="page-timeline_left.html">Timeline</a>
-              </li>
-              <li>
-                <a href="page-contact.html">Contact Option</a>
-              </li>
-              <li>
-                <a href="page-login.html">Login</a>
-              </li>
-              <li>
-                <a href="page-pricing.html">Pricing</a>
-              </li>
-              <li>
-                <a href="page-coming.html">Coming Soon</a>
-              </li>
-            </ul>
-          </li>
-          <li class="panel" role="tab" id="sch4">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc4" aria-expanded="false" aria-controls="sc4">
-              <i class="zmdi zmdi-edit"></i> Blog </a>
-            <ul id="sc4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch4">
-              <li>
-                <a href="blog-sidebar.html">Blog Sidebar 1</a>
-              </li>
-              <li>
-                <a href="blog-sidebar2.html">Blog Sidebar 2</a>
-              </li>
-              <li>
-                <a href="blog-masonry.html">Blog Masonry 1</a>
-              </li>
-              <li>
-                <a href="blog-masonry2.html">Blog Masonry 2</a>
-              </li>
-              <li>
-                <a href="blog-full.html">Blog Full Page 1</a>
-              </li>
-              <li>
-                <a href="blog-full2.html">Blog Full Page 2</a>
-              </li>
-              <li>
-                <a href="blog-post.html">Blog Post 1</a>
-              </li>
-              <li>
-                <a href="blog-post2.html">Blog Post 2</a>
-              </li>
-            </ul>
-          </li>
-          <li class="panel" role="tab" id="sch5">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc5" aria-expanded="false" aria-controls="sc5">
-              <i class="zmdi zmdi-shopping-basket"></i> E-Commerce </a>
-            <ul id="sc5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch5">
-              <li>
-                <a href="ecommerce-filters.html">E-Commerce Sidebar</a>
-              </li>
-              <li>
-                <a href="ecommerce-filters-full.html">E-Commerce Sidebar Full</a>
-              </li>
-              <li>
-                <a href="ecommerce-filters-full2.html">E-Commerce Topbar Full</a>
-              </li>
-              <li>
-                <a href="ecommerce-item.html">E-Commerce Item</a>
-              </li>
-              <li>
-                <a href="ecommerce-cart.html">E-Commerce Cart</a>
-              </li>
-            </ul>
-          </li>
-          <li class="panel" role="tab" id="sch6">
-            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#slidebar-menu" href="#sc6" aria-expanded="false" aria-controls="sc6">
-              <i class="zmdi zmdi-collection-image-o"></i> Portfolio </a>
-            <ul id="sc6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sch6">
-              <li>
-                <a href="portfolio-filters_sidebar.html">Portfolio Sidebar Filters</a>
-              </li>
-              <li>
-                <a href="portfolio-filters_topbar.html">Portfolio Topbar Filters</a>
-              </li>
-              <li>
-                <a href="portfolio-filters_sidebar_fluid.html">Portfolio Sidebar Fluid</a>
-              </li>
-              <li>
-                <a href="portfolio-filters_topbar_fluid.html">Portfolio Topbar Fluid</a>
-              </li>
-              <li>
-                <a href="portfolio-cards.html">Porfolio Cards</a>
-              </li>
-              <li>
-                <a href="portfolio-masonry.html">Porfolio Masonry</a>
-              </li>
-              <li>
-                <a href="portfolio-item.html">Portfolio Item 1</a>
-              </li>
-              <li>
-                <a href="portfolio-item2.html">Portfolio Item 2</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="link" href="component-typography.html">
-              <i class="zmdi zmdi-view-compact"></i> UI Elements</a>
-          </li>
-          <li>
-            <a class="link" href="page-all.html">
-              <i class="zmdi zmdi-link"></i> All Pages</a>
-          </li>
-        </ul>
-        <div class="ms-slidebar-social ms-slidebar-block">
-          <h4 class="ms-slidebar-block-title">Social Links</h4>
-          <div class="ms-slidebar-social">
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-facebook">
-              <i class="zmdi zmdi-facebook"></i>
-              <span class="badge badge-pink">12</span>
-              <div class="ripple-container"></div>
-            </a>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-twitter">
-              <i class="zmdi zmdi-twitter"></i>
-              <span class="badge badge-pink">4</span>
-              <div class="ripple-container"></div>
-            </a>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-google">
-              <i class="zmdi zmdi-google"></i>
-              <div class="ripple-container"></div>
-            </a>
-            <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-instagram">
-              <i class="zmdi zmdi-instagram"></i>
-              <div class="ripple-container"></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('partials._mobile_menu')
     <script src="{{ asset('js/plugins.min.js') }}"></script>
     <script src="{{ asset('js/app.min.js') }}"></script>
     <script src="{{ asset('js/index.js') }}"></script>
+
+    <script src="{{ asset('plugins/revolution/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+    <script src="{{ asset('plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+    <script type="text/javascript">
+      $(function()
+      {
+        $('#Container').mixItUp();
+      });
+      var tpj = jQuery;
+      var revapi1014;
+      tpj(document).ready(function()
+      {
+        if (tpj("#rev_slider_1014_1").revolution == undefined)
+        {
+          revslider_showDoubleJqueryError("#rev_slider_1014_1");
+        }
+        else
+        {
+          revapi1014 = tpj("#rev_slider_1014_1").show().revolution(
+          {
+            sliderType: "standard",
+            jsFileLocation: "plugins/revolution/revolution/js/",
+            sliderLayout: "fullscreen",
+            dottedOverlay: "none",
+            delay: 9000,
+            navigation:
+            {
+              keyboardNavigation: "off",
+              keyboard_direction: "horizontal",
+              mouseScrollNavigation: "off",
+              mouseScrollReverse: "default",
+              onHoverStop: "off",
+              touch:
+              {
+                touchenabled: "on",
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: "horizontal",
+                drag_block_vertical: false
+              },
+              arrows:
+              {
+                style: "uranus",
+                enable: true,
+                hide_onmobile: true,
+                hide_under: 768,
+                hide_onleave: false,
+                tmp: '',
+                left:
+                {
+                  h_align: "left",
+                  v_align: "center",
+                  h_offset: 20,
+                  v_offset: 0
+                },
+                right:
+                {
+                  h_align: "right",
+                  v_align: "center",
+                  h_offset: 20,
+                  v_offset: 0
+                }
+              }
+            },
+            responsiveLevels: [1240, 1024, 778, 480],
+            visibilityLevels: [1240, 1024, 778, 480],
+            gridwidth: [1240, 1024, 778, 480],
+            gridheight: [868, 768, 960, 600],
+            lazyType: "none",
+            shadow: 0,
+            spinner: "off",
+            stopLoop: "on",
+            stopAfterLoops: 0,
+            stopAtSlide: 1,
+            shuffle: "off",
+            autoHeight: "off",
+            fullScreenAutoWidth: "off",
+            fullScreenAlignForce: "off",
+            fullScreenOffsetContainer: "",
+            fullScreenOffset: "60px",
+            disableProgressBar: "on",
+            hideThumbsOnMobile: "off",
+            hideSliderAtLimit: 0,
+            hideCaptionAtLimit: 0,
+            hideAllCaptionAtLilmit: 0,
+            debugMode: false,
+            fallbacks:
+            {
+              simplifyAll: "off",
+              nextSlideOnWindowFocus: "off",
+              disableFocusListener: false,
+            }
+          });
+        }
+        RsTypewriterAddOn(tpj, revapi1014);
+      }); /*ready*/
+    </script>
+    <script type="text/javascript">
+    if($('#message_alert').length)
+      $('#message_alert').fadeOut(10000, function(){
+        $(this).remove();
+      });
+    </script>
+    <script type="text/javascript">
+      function moveToContact(){
+        $('html, body').animate({
+          scrollTop: $("#contact").offset().top - 30
+        }, 2000);
+      }
+    </script>
   </body>
 </html>
