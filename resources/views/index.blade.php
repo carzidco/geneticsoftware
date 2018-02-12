@@ -1196,7 +1196,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="card card-primary animated zoomInUp animation-delay-5">
-                  <div class="card-block">
+                  <div class="card-block">                    
                     <form id="contact-form" class="form-horizontal" method="post" action="{{ asset('/contact/send_email') }}">
                       {{ csrf_field() }}
                       <fieldset>
@@ -1239,14 +1239,15 @@
               <div class="ms-footbar-block">
                 <h3 class="ms-footbar-title">Noticias</h3>
                 <p class="">Suscríbase a nuestro boletín</p>
-                <form>
+                <form id="news-form" method="post" action="{{ asset('/add_news_subscription') }}">
+                {{ csrf_field() }}
                   <div class="form-group label-floating mt-2 mb-1">
                     <div class="input-group ms-input-subscribe">
                       <label class="control-label" for="ms-subscribe">
-                        <i class="zmdi zmdi-email"></i> Correo eletrónico</label>
-                      <input type="email" id="ms-subscribe" class="form-control" style="color: black !important"> </div>
+                        <i class="zmdi zmdi-email"></i> Correo electrónico</label>
+                      <input type="email" name="email" class="form-control" style="color: black !important"> </div>
                   </div>
-                  <button class="ms-subscribre-btn" type="button">Suscribirse</button>
+                  <button class="ms-subscribre-btn" type="submit">Suscribirse</button>
                 </form>
               </div>
             </div>

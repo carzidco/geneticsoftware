@@ -8,6 +8,7 @@ use GuzzleHttp\Client;
 use Carbon\Carbon;
 use App\Library\Mailer;
 use App\Mail\Contact;
+use App\Models\Subscription;
 use Mail;
 use Illuminate\Support\Facades\Redirect;
 
@@ -44,5 +45,15 @@ class IndexController extends Controller
               );
       return Redirect::route('index')->withTitle(INFO_TITLE)->withMessage(INFO_MESSAGE);
     }
+    
+    public function add_news_subscription(){
+      $email = $_POST["email"];
+      $subscription = new Subscription();
+      $subscription->email = $email;
+      $subscription->active = 1;
+      $subscription->save();
+      return Redirect::route('index')->withTitle(SUBSCRIPTION_TITLE)->withMessage(SUBSCRIPTION_MESSAGE);
+    }
+    
 
 }
