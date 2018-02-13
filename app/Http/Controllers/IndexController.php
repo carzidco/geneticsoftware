@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests;
 use Telegram\Bot\Api;
 use GuzzleHttp\Client;
 use Carbon\Carbon;
@@ -35,7 +36,7 @@ class IndexController extends Controller
       return $posts;
     }
     
-    public function send_email(){
+    public function send_email(Request $request){
       $captcha_token = $request->input('g-recaptcha-response');
       if($captcha_token){
         $client = new Client();
@@ -57,7 +58,7 @@ class IndexController extends Controller
           return Redirect::route('index')->withTitle(INFO_TITLE)->withMessage(INFO_MESSAGE);
         }
       }
-      return Redirect::route('index')->withTitle(INFO_TITLE)->withMessage(INFO_MESSAGE_ERROR);
+      return Redirect::route('index')->withTitle(INFO_TITLE_ERROR)->withMessage(INFO_MESSAGE_ERROR);
     }
     
     public function add_news_subscription(){

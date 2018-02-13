@@ -34,7 +34,7 @@
       {{-- <div class="alert-box success" id="message_alert">
         {{{ Session::get('message') }}}
       </div> --}}
-      <div class="modal modal-dark" id="message_alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6"  style="display: block">
+      <div class="modal {{{ Session::get('title') == INFO_TITLE_ERROR ? 'modal-danger' : 'modal-dark' }}}" id="message_alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6"  style="display: block">
         <div class="modal-dialog animated zoomIn animated-3x" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1203,15 +1203,18 @@
                       <fieldset>
                         <div class="form-group">
                           <div class="col-md-12">
-                            <input type="text" class="form-control" name="name" placeholder="Nombre"> </div>
+                            <input type="text" class="form-control" name="name" placeholder="Nombre" oninvalid="setCustomValidity('Nombre es requerido')" onchange="try{setCustomValidity('')}catch(e){}" required>
+                          </div>
                         </div>
                         <div class="form-group">
                           <div class="col-md-12">
-                            <input type="email" class="form-control" name="email" placeholder="Correo Electrónico"> </div>
+                            <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" oninvalid="setCustomValidity('Correo Electrónico es requerido')" onchange="try{setCustomValidity('')}catch(e){}" required>
+                          </div>
                         </div>
                         <div class="form-group">
                           <div class="col-md-12">
-                            <input type="text" class="form-control" name="subject_info" placeholder="Título"> </div>
+                            <input type="text" class="form-control" name="subject_info" placeholder="Título" oninvalid="setCustomValidity('Título es requerido')" onchange="try{setCustomValidity('')}catch(e){}" required>
+                          </div>
                         </div>
                         <div class="form-group">
                           <div class="col-md-12">
@@ -1220,7 +1223,7 @@
                         </div>
                         <div class="form-group">
                           <div class="col-md-12">
-                             <div class="g-recaptcha" data-sitekey="6LcgljcUAAAAANEXomb_BpHH_mBnlaVIXGIl14O1"></div>
+                            <div class="g-recaptcha" data-sitekey="6Lc-9EUUAAAAANAwRakSImgKOvWTI2gXXFqsuLVr"></div>
                           </div>
                         </div>
                         <div class="form-group">

@@ -31,9 +31,7 @@ Route::get('/serviciosbm/cart', 'CartController@index')->name('serviciosbm.cart'
 Route::get('/serviciosbm/telegram', 'TelegramController@index');
 
 // Email
-Route::match(['post'], '/contact/send_email', function() {
-  return (new IndexController)->send_email();
-});
+Route::match(['post'], '/contact/send_email', 'IndexController@send_email');
 Route::match(['post'], '/add_news_subscription', function() {
   return (new IndexController)->add_news_subscription();
 });
@@ -44,7 +42,8 @@ define('INFO_EMAIL', 'carlos@geneticsoftware.net,stefania@geneticsoftware.net');
 // SYSTEM MESSAGES
 define('INFO_TITLE', 'Mensaje enviado');
 define('INFO_MESSAGE', 'Gracias por su interés en contactarnos, pronto estaremos respondiéndole.');
-define('INFO_MESSAGE_ERROR', 'Necesita activar el captcha antes de enviar el mensaje, por favor valídelo antes de enviar el mensaje nuevamente.');
+define('INFO_TITLE_ERROR', 'Error');
+define('INFO_MESSAGE_ERROR', 'Necesita activar el captcha antes de enviar el mensaje, por favor valídelo antes de enviarlo nuevamente.');
 define('SUBSCRIPTION_TITLE', 'Suscripción realizada');
 define('SUBSCRIPTION_MESSAGE', 'Gracias por ser parte de nuestras comunidad de contactos.');
 
