@@ -36,6 +36,8 @@ Route::match(['post'], '/add_news_subscription', function() {
   return (new IndexController)->add_news_subscription();
 });
 
+Route::get('/email', 'UtilController@email');
+
 
 // CONST
 define('INFO_EMAIL', 'carlos@geneticsoftware.net,stefania@geneticsoftware.net');

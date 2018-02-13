@@ -68,7 +68,6 @@ class IndexController extends Controller
       $subscription->active = 1;
       $subscription->save();
       return Redirect::route('index')->withTitle(SUBSCRIPTION_TITLE)->withMessage(SUBSCRIPTION_MESSAGE);
-    }
-    
+    }    
 
 }
