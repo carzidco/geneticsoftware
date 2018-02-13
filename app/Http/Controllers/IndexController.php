@@ -36,14 +36,28 @@ class IndexController extends Controller
     }
     
     public function send_email(){
-      $emails = explode(',', INFO_EMAIL);
-      Mail::to($emails)
-            ->send(
-              new Contact(
-                $_POST["name"], $_POST["email"],
-                $_POST["subject_info"], $_POST["message_info"])
-              );
-      return Redirect::route('index')->withTitle(INFO_TITLE)->withMessage(INFO_MESSAGE);
+      $captcha_token = $request->input('g-recaptcha-response');
+      if($captcha_token){
+        $client = new Client();
+        $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
+          'form_params' => array(
+              'secret'    => '6Lc-9EUUAAAAAB4xnNa3xE_wX_R3e1kzF-vt7fsA',
+              'response'  => $captcha_token
+          )
+        ]);
+        $result = json_decode($response->getBody()->getContents());
+        if($result->success){
+          $emails = explode(',', INFO_EMAIL);
+          Mail::to($emails)
+                ->send(
+                  new Contact(
+                    $_POST["name"], $_POST["email"],
+                    $_POST["subject_info"], $_POST["message_info"])
+                  );
+          return Redirect::route('index')->withTitle(INFO_TITLE)->withMessage(INFO_MESSAGE);
+        }
+      }
+      return Redirect::route('index')->withTitle(INFO_TITLE)->withMessage(INFO_MESSAGE_ERROR);
     }
     
     public function add_news_subscription(){

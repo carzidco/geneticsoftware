@@ -23,6 +23,7 @@
     <link href="{{ asset('plugins/revolution/revolution/css/navigation.css') }}" rel="stylesheet">
     <script src="{{ asset('plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js') }}"></script>
     <link href="{{ asset('plugins/revolution/revolution-addons/typewriter/css/typewriter.css') }}" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!--[if lt IE 9]>
         <script src="js/html5shiv.min.js"></script>
         <script src="js/respond.min.js"></script>
@@ -1215,6 +1216,11 @@
                         <div class="form-group">
                           <div class="col-md-12">
                             <textarea class="form-control" rows="5" name="message_info" placeholder="Tu mensaje..."></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-md-12">
+                             <div class="g-recaptcha" data-sitekey="6LcgljcUAAAAANEXomb_BpHH_mBnlaVIXGIl14O1"></div>
                           </div>
                         </div>
                         <div class="form-group">
