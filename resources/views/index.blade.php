@@ -9,7 +9,7 @@
     <title>Genetic Software</title>
     <meta name="description" content="Genetic Software">
     <link rel="shortcut icon" href="{{ asset('images/molecule.png') }}">
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!-- <link rel="stylesheet" href="../css/preload.min.css" /> -->
     <link href="{{ asset('css/plugins.min.css') }}" rel="stylesheet">
@@ -267,14 +267,14 @@
               <!-- <img src="images/demo/logo-navbar.png" alt=""> -->
               <span class="ms-title">Genetic
                 &nbsp;
-                <span class="red-genetic"><strong>Software</strong></span> 
+                <span class="red-genetic"><strong>Software</strong></span>
               </span>
             </a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="dropdown">
-                <a data-scroll href="#home" class="dropdown-toggle animated fadeIn animation-delay-2 link">  
+                <a data-scroll href="#home" class="dropdown-toggle animated fadeIn animation-delay-2 link">
                   Inicio
                 </a>
               </li>
@@ -1197,7 +1197,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <div class="card card-primary animated zoomInUp animation-delay-5">
-                  <div class="card-block">                    
+                  <div class="card-block">
                     <form id="contact-form" class="form-horizontal" method="post" action="{{ asset('/contact/send_email') }}">
                       {{ csrf_field() }}
                       <fieldset>
@@ -1462,5 +1462,18 @@
         }, 2000);
       }
     </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5a948d134b401e45400d3904/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
   </body>
 </html>
