@@ -28,14 +28,15 @@ class IndexController extends Controller
 
     public function get_wp_posts(){
       $client = new Client();
-      $body = $client->get('http://blog.geneticsoftware.net/wp-json/wp/v2/posts/')->getBody();
+      /*$body = $client->get('http://blog.geneticsoftware.net/wp-json/wp/v2/posts/')->getBody();
       $posts = json_decode($body);
       foreach ($posts as $p) {
         $p->formatted_date = Carbon::parse($p->date);
-      }
+      }*/
+      $posts = [];
       return $posts;
     }
-    
+
     public function send_email(Request $request){
       $captcha_token = $request->input('g-recaptcha-response');
       if($captcha_token){
@@ -60,7 +61,7 @@ class IndexController extends Controller
       }
       return Redirect::route('index')->withTitle(INFO_TITLE_ERROR)->withMessage(INFO_MESSAGE_ERROR);
     }
-    
+
     public function add_news_subscription(){
       $email = $_POST["email"];
       $subscription = new Subscription();
@@ -68,6 +69,6 @@ class IndexController extends Controller
       $subscription->active = 1;
       $subscription->save();
       return Redirect::route('index')->withTitle(SUBSCRIPTION_TITLE)->withMessage(SUBSCRIPTION_MESSAGE);
-    }    
+    }
 
 }
