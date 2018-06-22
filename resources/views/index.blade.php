@@ -1272,7 +1272,7 @@
                       </div>
                       <div class="media-body">
                         <h4 class="media-heading">
-                          <a href="{{{ $p->link }}}" target="_blank">{{{ $p->slug }}}</a>
+                          <a href="{{{ $p->link }}}" target="_blank">{{{ $p->title->rendered }}}</a>
                         </h4>
                         <div class="media-footer">
                           <span>
