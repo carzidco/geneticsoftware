@@ -1298,14 +1298,14 @@
                     <i class="color-danger-light zmdi zmdi-pin mr-1"></i> Santa Ana, San José, Costa Rica</p>
                 </address>
                 <br>
-                <address class="no-mb">
+                <!-- <address class="no-mb">
                   <p>
                     <i class="color-info-light zmdi zmdi-email mr-1"></i>
                     <a href="mailto:joe@example.com">carlos@geneticsoftware.net</a>
                   </p>
                   <p>
                     <i class="color-royal-light zmdi zmdi-phone mr-1"></i>+506 88157067 </p>
-                </address>
+                </address> -->
                 <address class="no-mb">
                   <p>
                     <i class="color-info-light zmdi zmdi-email mr-1"></i>
