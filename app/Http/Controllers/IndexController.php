@@ -28,11 +28,11 @@ class IndexController extends Controller
 
     public function get_wp_posts(){
       $client = new Client();
-      $body = $client->get('http://104.131.106.186/wp-json/wp/v2/posts/')->getBody();
+      $body = $client->get('http://167.99.60.143/wp-json/wp/v2/posts/')->getBody();
       $posts = json_decode($body);
       foreach ($posts as $p) {
         $p->formatted_date = Carbon::parse($p->date);
-        $p->link = str_replace('104.131.106.186', 'blog.geneticsoftware.net', $p->link);
+        $p->link = str_replace('167.99.60.143', 'blog.geneticsoftware.net', $p->link);
       }
       return $posts;
     }
