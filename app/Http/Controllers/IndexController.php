@@ -18,8 +18,8 @@ class IndexController extends Controller
     public function index(){
       // $telegram = new Api('467161914:AAHaFamwb7ZRjxt9tGaALUoZIapX3bEcC7c');
       // $response = $telegram->getMe();
-      $wp_posts = $this->get_wp_posts();
-      return view('index')->with('posts', $wp_posts);
+      //$wp_posts = $this->get_wp_posts();
+      return view('index')->with('posts', []);
     }
 
     public function servicios_bm_menu(){
