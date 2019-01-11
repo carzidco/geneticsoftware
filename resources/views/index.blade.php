@@ -40,6 +40,8 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '484486128625038'); 
     fbq('track', 'PageView');
+    fbq('track', 'Contact');
+    fbq('track', 'ViewContent');
     </script>
     <noscript>
     <img height="1" width="1" 
