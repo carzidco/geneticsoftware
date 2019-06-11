@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="theme-color" content="#333">
   <title>Genetic Software</title>
   <meta name="description" content="Genetic Software">
@@ -18,11 +19,13 @@
   <link href="{{ asset('css/genetic_style.css') }}" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-  <link href="{{ asset('plugins/revolution/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css') }}" rel="stylesheet">
+  <link href="{{ asset('plugins/revolution/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css') }}"
+    rel="stylesheet">
   <link href="{{ asset('plugins/revolution/revolution/css/settings.css') }}" rel="stylesheet">
   <link href="{{ asset('plugins/revolution/revolution/css/layers.css') }}" rel="stylesheet">
   <link href="{{ asset('plugins/revolution/revolution/css/navigation.css') }}" rel="stylesheet">
-  <script src="{{ asset('plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js') }}"></script>
+  <script src="{{ asset('plugins/revolution/revolution-addons/typewriter/js/revolution.addon.typewriter.min.js') }}">
+  </script>
   <link href="{{ asset('plugins/revolution/revolution-addons/typewriter/css/typewriter.css') }}" rel="stylesheet">
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <!--[if lt IE 9]>
@@ -62,15 +65,18 @@
 
   <!-- Localizejs -->
 
+
   <script src="https://global.localizecdn.com/localize.js"></script>
 
   <script>
-    ! function(a) {
-      if (!a.Localize) {
-        a.Localize = {};
-        for (var e = ["translate", "untranslate", "phrase", "initialize", "translatePage", "setLanguage", "getLanguage", "detectLanguage", "getAvailableLanguages", "untranslatePage", "bootstrap", "prefetch", "on", "off"], t = 0; t < e.length; t++) a.Localize[e[t]] = function() {}
-      }
-    }(window);
+    !function(a){if(!a.Localize){a.Localize={};for(var e=["translate","untranslate","phrase","initialize","translatePage","setLanguage","getLanguage","detectLanguage","getAvailableLanguages","untranslatePage","bootstrap","prefetch","on","off"],t=0;t<e.length;t++)a.Localize[e[t]]=function(){}}}(window);
+  </script>
+
+  <script>
+    Localize.initialize({
+  key: 'TLSUAkRimQBDg',
+  rememberLanguage: true
+ });
   </script>
 
   <script>
@@ -87,11 +93,13 @@
   {{-- <div class="alert-box success" id="message_alert">
         {{{ Session::get('message') }}}
   </div> --}}
-  <div class="modal {{{ Session::get('title') == INFO_TITLE_ERROR ? 'modal-danger' : 'modal-dark' }}}" id="message_alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" style="display: block">
+  <div class="modal {{{ Session::get('title') == INFO_TITLE_ERROR ? 'modal-danger' : 'modal-dark' }}}"
+    id="message_alert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" style="display: block">
     <div class="modal-dialog animated zoomIn animated-3x" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i
+                class="zmdi zmdi-close"></i></span></button>
           <h3 class="modal-title" id="myModalLabel">{{{ Session::get('title')  }}}</h3>
         </div>
         <div class="modal-body">
@@ -132,15 +140,18 @@
             <div class="modal-header-tabs">
               <ul class="nav nav-tabs nav-tabs-full nav-tabs-3 nav-tabs-primary" role="tablist">
                 <li role="presentation" class="active">
-                  <a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab" class="withoutripple">
+                  <a href="#ms-login-tab" aria-controls="ms-login-tab" role="tab" data-toggle="tab"
+                    class="withoutripple">
                     <i class="zmdi zmdi-account"></i> Login</a>
                 </li>
                 <li role="presentation">
-                  <a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab" class="withoutripple">
+                  <a href="#ms-register-tab" aria-controls="ms-register-tab" role="tab" data-toggle="tab"
+                    class="withoutripple">
                     <i class="zmdi zmdi-account-add"></i> Register</a>
                 </li>
                 <li role="presentation">
-                  <a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab" class="withoutripple">
+                  <a href="#ms-recovery-tab" aria-controls="ms-recovery-tab" role="tab" data-toggle="tab"
+                    class="withoutripple">
                     <i class="zmdi zmdi-key"></i> Recovery Pass</a>
                 </li>
               </ul>
@@ -307,7 +318,8 @@
               <i class="zmdi zmdi-share"></i>
             </a>
           </div>
-          <a href="javascript:void(0)" class="btn-ms-menu btn-circle btn-circle-primary sb-toggle-left animated zoomInDown animation-delay-10">
+          <a href="javascript:void(0)"
+            class="btn-ms-menu btn-circle btn-circle-primary sb-toggle-left animated zoomInDown animation-delay-10">
             <i class="zmdi zmdi-menu"></i>
           </a>
         </div>
@@ -564,7 +576,8 @@
     <section id="aboutus" class="mt-6">
       <div class="wrap ms-hero-img-city2 ms-hero-bg-light color-white ms-bg-fixed">
         <div class="container">
-          <h1 class="text-center color-warning wow zoomInDown blue-genetic title-genetic"><strong>¿Quiénes somos nosotros?</strong></h1>
+          <h1 class="text-center color-warning wow zoomInDown blue-genetic title-genetic"><strong>¿Quiénes somos
+              nosotros?</strong></h1>
           <div class="row" style="margin-bottom: 50px">
             {{-- <div class="col-md-6 col-md-push-6 mb-4  center-block">
                 <img src="images/demo/molecules.png" alt="" class="img-responsive center-block wow zoomIn animation-delay-12 ">
@@ -572,16 +585,20 @@
             <div class="col-md-6 col-md-push-6 pr-6">
               <p class="wow fadeInRight animation-delay-6">
                 Nuestro equipo de ingenieros comparte con nosotros la ideología de nuestra marca, una molécula
-                de <strong><span class="blue-genetic">A</span><span class="dark-yellow-genetic">D</span><span class="red-genetic">N</span></strong> que nos caracteriza como individuos, como creación única. Nuestros proyectos y metodologías
+                de <strong><span class="blue-genetic">A</span><span class="dark-yellow-genetic">D</span><span
+                    class="red-genetic">N</span></strong> que nos caracteriza como individuos, como creación única.
+                Nuestros proyectos y metodologías
                 también lo son.
               </p>
               <p class="wow fadeInRight animation-delay-7">
-                Lo invitamos a que navegue un poco más en nuestra web, para que conozca a fondo lo que hacemos, lo que nos hace diferentes, y cómo nuestro concepto de negocio puede ayudar a su organización.
+                Lo invitamos a que navegue un poco más en nuestra web, para que conozca a fondo lo que hacemos, lo que
+                nos hace diferentes, y cómo nuestro concepto de negocio puede ayudar a su organización.
               </p>
             </div>
             <div class="col-md-6 col-md-pull-6 pr-6">
               <p class="wow fadeInLeft animation-delay-6">
-                <strong>Genetic Software Costa Rica</strong>, nace en el 2012 como una idea de emprendimiento, de pasión por la tecnología,
+                <strong>Genetic Software Costa Rica</strong>, nace en el 2012 como una idea de emprendimiento, de pasión
+                por la tecnología,
                 y por deseo infinito de hacer bien las cosas desde la primera vez, con el objetivo de
                 agradar a nuestros clientes actuales y potenciales.
               </p>
@@ -597,7 +614,8 @@
                 </div> --}}
             </div>
           </div>
-          <h1 class="text-center color-warning wow zoomInDown blue-genetic title-genetic">A lo largo de nuestra trayectoria</h1>
+          <h1 class="text-center color-warning wow zoomInDown blue-genetic title-genetic">A lo largo de nuestra
+            trayectoria</h1>
           <div class="row">
             <div class="mt-6 color-dark">
               <div class="row">
@@ -682,20 +700,26 @@
               </ol>
             </div>
             <div class="col-md-6">
-              <div class="panel-group ms-collapse color-dark" id="accordion2" role="tablist" aria-multiselectable="true">
+              <div class="panel-group ms-collapse color-dark" id="accordion2" role="tablist"
+                aria-multiselectable="true">
                 <div class="panel panel-info wow fadeInUp animation-delay-1">
                   <div class="panel-heading bg-blue-genetic" role="tab" id="headingOne2">
                     <h4 class="panel-title">
-                      <a class="withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                      <a class="withripple" role="button" data-toggle="collapse" data-parent="#accordion2"
+                        href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
                         <i class="fa fa-lightbulb-o"></i> ¿Qué se entiende por refactorización? </a>
                     </h4>
                   </div>
-                  <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne2">
+                  <div id="collapseOne2" class="panel-collapse collapse in" role="tabpanel"
+                    aria-labelledby="headingOne2">
                     <div class="panel-body in">
-                      <p>La refactorización es una técnica que consiste en hacer una aplicación escalable a través de cambios en el
+                      <p>La refactorización es una técnica que consiste en hacer una aplicación escalable a través de
+                        cambios en el
                         código. Porque su código anterior no lo permitía.
-                        Nos encontramos en una época de acelerado desarrollo, las empresas cada vez más deben ofrecer mejores soluciones
-                        a sus clientes, más rápidas y ágiles, y esto solo se logra a través de un software de calidad, sin errores,
+                        Nos encontramos en una época de acelerado desarrollo, las empresas cada vez más deben ofrecer
+                        mejores soluciones
+                        a sus clientes, más rápidas y ágiles, y esto solo se logra a través de un software de calidad,
+                        sin errores,
                         escalable y mantenible, que se adapte y supere las exigencias del mercado.
                       </p>
                     </div>
@@ -704,7 +728,8 @@
                 <div class="panel panel-info wow fadeInUp animation-delay-5">
                   <div class="panel-heading bg-blue-genetic" role="tab" id="headingTwo2">
                     <h4 class="panel-title">
-                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2"
+                        href="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
                         <i class="fa fa-desktop"></i> ¿Cuándo es necesaria una refactorización de software? </a>
                     </h4>
                   </div>
@@ -712,10 +737,13 @@
                     <div class="panel-body">
                       <p>
                         Una aplicación requiere una refactorización cuando por ejemplo el proveedor actual del servicio
-                        dice que tarda mucho en realizar algún tipo de ajuste, o inclusive dice que existe mucha dificultad
-                        para realizar cambios en esta. Además, un sitio web desactualizado, o aplicaciones que constantemente
+                        dice que tarda mucho en realizar algún tipo de ajuste, o inclusive dice que existe mucha
+                        dificultad
+                        para realizar cambios en esta. Además, un sitio web desactualizado, o aplicaciones que
+                        constantemente
                         se “caen” también pueden optar por un proceso de refactorización.
-                        Nuestra intención a través de este servicio es brindar una posibilidad para aquellos clientes que
+                        Nuestra intención a través de este servicio es brindar una posibilidad para aquellos clientes
+                        que
                         han invertido sus recursos en un software destinado a traer beneficios a sus organizaciones pero
                         que no pudo complacer los requerimientos del cliente por una mala programación previa,
                         o porque no se comprendió en realidad cuál era la necesidad verdadera.
@@ -726,17 +754,20 @@
                 <div class="panel panel-info wow fadeInUp animation-delay-7">
                   <div class="panel-heading bg-blue-genetic" role="tab" id="headingThree3">
                     <h4 class="panel-title">
-                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2"
+                        href="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
                         <i class="fa fa-user"></i> ¿Qué es software a la medida? </a>
                     </h4>
                   </div>
-                  <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree2">
+                  <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingThree2">
                     <div class="panel-body">
                       <p>
                         A pesar de la facilidad actual de encontrar soluciones de software existentes,
                         muchas veces estas no se adaptan a un giro de negocio en específico.
                         Nada mejor para un problema particular que una respuesta especializada, es ahí donde el software
-                        a la medida es lo más indicado. En Genetic Software comprendemos las necesidades específicas de cada uno
+                        a la medida es lo más indicado. En Genetic Software comprendemos las necesidades específicas de
+                        cada uno
                         de nuestros clientes, logramos materializar sus ideas en proyectos útiles e innovadores.
                         Nuestro software a la medida logra posicionar a los clientes en un entorno digital competitivo,
                         con mayor alcance y mejores resultados.
@@ -747,11 +778,13 @@
                 <div class="panel panel-info wow fadeInUp animation-delay-9">
                   <div class="panel-heading bg-blue-genetic" role="tab" id="headingTwo4">
                     <h4 class="panel-title">
-                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2"
+                        href="#collapseFour2" aria-expanded="false" aria-controls="collapseFour2">
                         <i class="fa fa-mobile"></i> Diseño de aplicaciones para móviles </a>
                     </h4>
                   </div>
-                  <div id="collapseFour2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour2">
+                  <div id="collapseFour2" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingFour2">
                     <div class="panel-body">
                       <p>
                         Dentro de nuestros servicios especializados se encuentra el desarrollo de
@@ -766,16 +799,21 @@
                 <div class="panel panel-info wow fadeInUp animation-delay-11">
                   <div class="panel-heading bg-blue-genetic" role="tab" id="headingTwo4">
                     <h4 class="panel-title">
-                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
+                      <a class="collapsed withripple" role="button" data-toggle="collapse" data-parent="#accordion2"
+                        href="#collapseFive2" aria-expanded="false" aria-controls="collapseFive2">
                         <i class="fa fa-bullseye"></i> Mercadeo Digital </a>
                     </h4>
                   </div>
-                  <div id="collapseFive2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive2">
+                  <div id="collapseFive2" class="panel-collapse collapse" role="tabpanel"
+                    aria-labelledby="headingFive2">
                     <div class="panel-body">
                       <p>
-                        Ayudamos a las empresas sin importar su categorización o industria a mostrar mejor contenido digital.
-                        Somos expertos en SEO (Search Engine Optimization). Compartimos la idea de que los motores de búsqueda
-                        son la mejor manera de atraer tráfico. Ayudamos a nuestros clientes a mejorar su visibilidad del sitio web,
+                        Ayudamos a las empresas sin importar su categorización o industria a mostrar mejor contenido
+                        digital.
+                        Somos expertos en SEO (Search Engine Optimization). Compartimos la idea de que los motores de
+                        búsqueda
+                        son la mejor manera de atraer tráfico. Ayudamos a nuestros clientes a mejorar su visibilidad del
+                        sitio web,
                         convirtiéndolos en herramientas verdaderamente útiles.
                         Nuestros servicios de mercadeo:
                         <ol>
@@ -803,7 +841,8 @@
         <div class="container">
           <div class="row">
             <h1 class="font-light">Tecnologías que te permiten escalar</h1>
-            <p class="lead blue-genetic">— Le ofrecemos la combinación de herramientas óptimas para brindarle una solución a la medida</p>
+            <p class="lead blue-genetic">— Le ofrecemos la combinación de herramientas óptimas para brindarle una
+              solución a la medida</p>
             <div class="panel panel-light panel-flat">
               <!-- Nav tabs -->
               <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-5" role="tablist">
@@ -839,15 +878,20 @@
                   <div role="tabpanel" class="tab-pane active in fade" id="web">
                     <div class="row">
                       <div class="col-md-6 col-md-push-6">
-                        <img src="images/main/web.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <img src="images/main/web.png" alt="" class="img-responsive animated zoomIn animation-delay-8">
+                      </div>
                       <div class="col-md-6 col-md-pull-6">
-                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Cuenta su negocio con una óptima aplicación web?</h3>
+                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Cuenta su negocio con una óptima
+                          aplicación web?</h3>
                         <p class="lead lead-md animated fadeInUp animation-delay-6">
-                          Las tendencias digitales y su constante evolución nos obligan en la actualidad a tener no solamente un sitio web común que solo muestra información y fotos,
-                          si no aplicaciones que sean capaces de ofrecer interacción con el usuario y sacar provecho de la herramienta.
+                          Las tendencias digitales y su constante evolución nos obligan en la actualidad a tener no
+                          solamente un sitio web común que solo muestra información y fotos,
+                          si no aplicaciones que sean capaces de ofrecer interacción con el usuario y sacar provecho de
+                          la herramienta.
                         </p>
                         <p class="lead lead-md animated fadeInUp animation-delay-7">
-                          Modelamos sus aplicaciones con frameworks ligeros que le permitan una experiencia veloz y provechosa
+                          Modelamos sus aplicaciones con frameworks ligeros que le permitan una experiencia veloz y
+                          provechosa
                           al usuario desde cualquier dispositivo.
                         </p>
                       </div>
@@ -856,9 +900,11 @@
                   <div role="tabpanel" class="tab-pane fade" id="mobile">
                     <div class="row">
                       <div class="col-md-6 col-md-push-6">
-                        <img src="images/main/mobile.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <img src="images/main/mobile.png" alt=""
+                          class="img-responsive animated zoomIn animation-delay-8"> </div>
                       <div class="col-md-6 col-md-pull-6">
-                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Llega su negocio hasta el dispositivo móvil de sus clientes?</h3>
+                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Llega su negocio hasta el
+                          dispositivo móvil de sus clientes?</h3>
                         <p class="lead lead-md animated fadeInUp animation-delay-6">
                           Mejore la presencia de su marca y expanda su dominio digital.
                         </p>
@@ -871,11 +917,14 @@
                   <div role="tabpanel" class="tab-pane fade" id="refactoring">
                     <div class="row">
                       <div class="col-md-6 col-md-push-6">
-                        <img src="images/main/refactoring.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <img src="images/main/refactoring.png" alt=""
+                          class="img-responsive animated zoomIn animation-delay-8"> </div>
                       <div class="col-md-6 col-md-pull-6">
-                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Considera usted que uno de sus sistemas es inservible?</h3>
+                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Considera usted que uno de sus
+                          sistemas es inservible?</h3>
                         <p class="lead lead-md animated fadeInUp animation-delay-6">
-                          Las aplicaciones "obsoletas", los sistemas con errores frecuentes y lentos, o cualquiera que sea la
+                          Las aplicaciones "obsoletas", los sistemas con errores frecuentes y lentos, o cualquiera que
+                          sea la
                           situación de su sistema o aplicación no significa el fin de estos, o que su inversión inicial
                           se ha transformado en un gasto infructuoso.
                         </p>
@@ -889,9 +938,11 @@
                   <div role="tabpanel" class="tab-pane fade" id="chatbots">
                     <div class="row">
                       <div class="col-md-6 col-md-push-6">
-                        <img src="images/main/chatbot.png" alt="" class="img-responsive animated zoomIn animation-delay-8"> </div>
+                        <img src="images/main/chatbot.png" alt=""
+                          class="img-responsive animated zoomIn animation-delay-8"> </div>
                       <div class="col-md-6 col-md-pull-6">
-                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Inteligencia artificial y FAQ's?</h3>
+                        <h3 class="text-normal animated fadeInUp animation-delay-4">¿Inteligencia artificial y FAQ's?
+                        </h3>
                         <p class="lead lead-md animated fadeInUp animation-delay-6">
                           Satisfaga la demanda de respuesta inmediata de su público.
                         </p>
@@ -927,7 +978,8 @@
                 </span>
                 <h4 class="blue-genetic">Creatividad</h4>
                 <p class="">
-                  Fomentamos una cultura creativa donde nuestros colaboradores se sienten a gusto de imaginar nuevas soluciones.
+                  Fomentamos una cultura creativa donde nuestros colaboradores se sienten a gusto de imaginar nuevas
+                  soluciones.
                 </p>
               </div>
             </div>
@@ -938,7 +990,8 @@
                 </span>
                 <h4 class="dark-yellow-genetic">Innovación</h4>
                 <p class="">
-                  Creemos que innovar es inventar, es crecer, es correr riesgos y es finalmente romper la regla del “no se puede hacer”.
+                  Creemos que innovar es inventar, es crecer, es correr riesgos y es finalmente romper la regla del “no
+                  se puede hacer”.
                 </p>
               </div>
             </div>
@@ -1251,27 +1304,35 @@
             <div class="col-lg-12">
               <div class="card card-primary animated zoomInUp animation-delay-5">
                 <div class="card-block">
-                  <form id="contact-form" class="form-horizontal" method="post" action="{{ asset('/contact/send_email') }}">
+                  <form id="contact-form" class="form-horizontal" method="post"
+                    action="{{ asset('/contact/send_email') }}">
                     {{ csrf_field() }}
                     <fieldset>
                       <div class="form-group">
                         <div class="col-md-12">
-                          <input type="text" class="form-control" name="name" placeholder="Nombre" oninvalid="setCustomValidity('Nombre es requerido')" onchange="try{setCustomValidity('')}catch(e){}" required>
+                          <input type="text" class="form-control" name="name" placeholder="Nombre"
+                            oninvalid="setCustomValidity('Nombre es requerido')"
+                            onchange="try{setCustomValidity('')}catch(e){}" required>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="col-md-12">
-                          <input type="email" class="form-control" name="email" placeholder="Correo Electrónico" oninvalid="setCustomValidity('Correo Electrónico es requerido')" onchange="try{setCustomValidity('')}catch(e){}" required>
+                          <input type="email" class="form-control" name="email" placeholder="Correo Electrónico"
+                            oninvalid="setCustomValidity('Correo Electrónico es requerido')"
+                            onchange="try{setCustomValidity('')}catch(e){}" required>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="col-md-12">
-                          <input type="text" class="form-control" name="subject_info" placeholder="Título" oninvalid="setCustomValidity('Título es requerido')" onchange="try{setCustomValidity('')}catch(e){}" required>
+                          <input type="text" class="form-control" name="subject_info" placeholder="Título"
+                            oninvalid="setCustomValidity('Título es requerido')"
+                            onchange="try{setCustomValidity('')}catch(e){}" required>
                         </div>
                       </div>
                       <div class="form-group">
                         <div class="col-md-12">
-                          <textarea class="form-control" rows="5" name="message_info" placeholder="Tu mensaje..."></textarea>
+                          <textarea class="form-control" rows="5" name="message_info"
+                            placeholder="Tu mensaje..."></textarea>
                         </div>
                       </div>
                       <div class="form-group">
@@ -1281,7 +1342,8 @@
                       </div>
                       <div class="form-group">
                         <div class="col-md-12">
-                          <button type="submit" class="btn btn-raised bg-blue-genetic" style="color: white">Enviar</button>
+                          <button type="submit" class="btn btn-raised bg-blue-genetic"
+                            style="color: white">Enviar</button>
                         </div>
                       </div>
                     </fieldset>
@@ -1391,7 +1453,8 @@
     </aside>
     <footer class="ms-footer">
       <div class="container">
-        <p>Copyright &copy; Genetic Software {{{ date("Y") }}}, <strong><i>Somos Software que potencia Marcas</i></strong></p>
+        <p>Copyright &copy; Genetic Software {{{ date("Y") }}}, <strong><i>Somos Software que potencia
+              Marcas</i></strong></p>
       </div>
     </footer>
     <div class="btn-back-top">
